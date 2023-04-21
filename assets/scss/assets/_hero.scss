@@ -1,0 +1,23 @@
+.page-field,
+.acf-block-body {
+  .animation-title {
+    animation-timing-function: ease-out;
+    animation: mymoveanimation 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes mymoveanimation {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

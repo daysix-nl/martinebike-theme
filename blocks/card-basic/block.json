@@ -1,0 +1,16 @@
+{
+  "name": "card-basic",
+  "title": "Card - Basic",
+  "description": "A custom card block.",
+  "category": "card",
+  "icon": "admin-comments",
+  "keywords": ["card"],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "card-basic.php"
+  }
+}

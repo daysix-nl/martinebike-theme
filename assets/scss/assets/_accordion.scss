@@ -1,0 +1,106 @@
+.page-field, .acf-block-body {
+  .accordion {
+    background-color: #76a6b833;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition-delay: 0.2s;
+    transition-property: border-radius, background-color, color;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    &::after {
+      margin-left: auto;
+      content: "+";
+    }
+    &.active {
+      background-color: #003054;
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+      transition-delay: 0s;
+      transition: 0s;
+      &::after {
+        content: "-";
+      }
+    }
+  }
+  
+  .panel {
+    border-radius: 0 0 10px 10px;
+    padding: 0 18px;
+    background-color: #003054;
+    color: #fff;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.2s ease-out;
+    p {
+      margin-bottom: 20px;
+  
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .accordion.active > .panel {
+    display: inline-table;
+  }
+
+
+
+.accordion-item {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  
+    .accordion {
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition-delay: .2s;
+      transition-property: border-radius,background-color,color;
+      transition-duration: .2s;
+      // border-radius: 25px;
+
+      &::after {
+        content: "+";
+        margin-left: auto;
+        width: 20px;
+        transition: .3s;
+        display: block;
+        padding-left: 10px;
+        transform-origin: center;
+      }
+
+      &.active {
+        background-color: rgba(0,0,0,.05);
+        color: #000;
+        // border-radius: 25px 25px 0 0;
+        transition-delay: 0s;
+        transition: 0s;
+
+        &::after {
+          content: "-";
+          transform: rotate(180deg);
+          transform-origin: center;
+        }
+      }
+    }
+
+    .panel {
+      // border-radius: 0 0 25px 25px;
+      padding: 0 18px;
+      background-color: #fff;
+      overflow: hidden;
+      height: 0;
+      transition: height .2s ease-out;
+    }
+}
+
+}

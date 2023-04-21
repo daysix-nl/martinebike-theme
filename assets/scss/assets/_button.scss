@@ -1,0 +1,15 @@
+.page-field, .acf-block-body {
+a.bg-green,
+a.bg-darkblue,
+a.text-black,
+a.bg-white,
+a.button,
+p a,
+button {
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+}
+}

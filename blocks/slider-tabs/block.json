@@ -1,0 +1,16 @@
+{
+  "name": "slider-tabs",
+  "title": "Slider - tabs",
+  "description": "A custom slider block.",
+  "category": "card",
+  "icon": "admin-comments",
+  "keywords": ["slider"],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "slider-tabs.php"
+  }
+}

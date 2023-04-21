@@ -1,0 +1,39 @@
+.page-field, .acf-block-body {
+  .overlay-contact {
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+  right: -450px;
+  z-index: 4;
+  width: 450px;
+  max-width: 95vw;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: transparent;
+  transition: transform 0.5s;
+  transform: translateX(450px);
+  z-index: 41;
+  background-color: #fff;
+  &.open {
+    transform: translateX(-450px);
+    transition: transform 0.5s;
+    transition-delay: 200ms;
+  }
+}
+
+.overlay-contact-background {
+    
+  &.open {
+    background-color: #222222;
+    filter: blur(4px);
+    position: fixed;
+    opacity: 0.6;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 40;
+  }
+}
+}

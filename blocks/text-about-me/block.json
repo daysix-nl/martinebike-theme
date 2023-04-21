@@ -1,0 +1,16 @@
+{
+  "name": "text-about-me",
+  "title": "text - About me",
+  "description": "A custom text block.",
+  "category": "text",
+  "icon": "admin-comments",
+  "keywords": ["text"],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "text-about-me.php"
+  }
+}

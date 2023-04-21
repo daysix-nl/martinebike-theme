@@ -1,0 +1,16 @@
+{
+  "name": "main-blocks-title",
+  "title": "main-blocks - title",
+  "description": "A custom hero block.",
+  "category": "main-blocks",
+  "icon": "admin-comments",
+  "keywords": ["main-blocks", "title"],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "main-blocks-title.php"
+  }
+}
