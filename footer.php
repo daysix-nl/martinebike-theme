@@ -205,7 +205,7 @@
   }
   </style>
 
- <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php the_field('tonen', 'option'); ?>">
+ <div class="<?php the_field('tonen', 'option'); ?> cookie-popup cookie-popup--short cookie-popup--dark">
 
     <div>
     <strong><?php the_field('popup_titel', 'option'); ?></strong><br>
