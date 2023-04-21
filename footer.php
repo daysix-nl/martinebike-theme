@@ -200,9 +200,6 @@
     to { bottom: 1.25rem; }
   }
 
-  .pop-hidden {
-    display: none !important;
-  }
   </style>
 
 
