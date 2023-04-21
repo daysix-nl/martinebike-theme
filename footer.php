@@ -199,6 +199,10 @@
     from { bottom: -6.25rem; }
     to { bottom: 1.25rem; }
   }
+
+  .pop-hidden {
+    display: none !important;
+  }
   </style>
 
  <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php the_field('tonen', 'option'); ?>">
