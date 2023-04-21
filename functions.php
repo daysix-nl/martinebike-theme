@@ -881,6 +881,12 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Opening Hours',
 		'parent_slug'	=> 'options',
 	));
+
+        acf_add_options_sub_page(array(
+		'page_title' 	=> 'Pop-up',
+		'menu_title'	=> 'Pop-up',
+		'parent_slug'	=> 'options',
+	));
 }
 
 

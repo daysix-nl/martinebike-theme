@@ -156,8 +156,8 @@
     width: 21.875rem; 
   }
   .cookie-popup--dark {
-    background: #dac580;
-    color: #212529;
+    background: #8ebf31;
+    color: #fff;
   }
   .cookie-popup--not-accepted {
     opacity: 1;
@@ -168,10 +168,10 @@
     opacity: 0;
   }
   .cookie-popup a {
-    color: #212529;
+    color: #fff;
   }
   .cookie-popup a:visited {
-    color: #212529;
+    color: #fff;
     text-decoration: none;
   }
   .cookie-popup-actions {
@@ -179,7 +179,7 @@
     text-align: right;
   }
   .cookie-popup-actions button {
-    color: #212529;
+    color: #fff;
     border: none;
     background: none;
     font-family: inherit;
@@ -202,12 +202,12 @@
   </style>
 
  <div class="cookie-popup cookie-popup--short cookie-popup--dark">
-    <a href="#" id="pop_up_link">
+
     <div>
     <strong>Test</strong><br>
     <p>Tekst</p>
     </div>
-    </a>
+ 
     <div class="cookie-popup-actions">
       <button>X</button>
     </div>
