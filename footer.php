@@ -125,6 +125,133 @@
 <!-- <section class="fixed bottom-0 bg-[#ff0000] left-0 right-0">
     <p class="text-white text-20 py-1 text-center z-[999]">-- THIS WEBSITE IS UNDER CONSTRUCTION -- </p>
  </section> -->
+
+<style>/* COOKIE POPUP STYLES */
+
+
+
+.cookie-popup {
+  
+    font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0,0,0, .15);
+    line-height: 150%;
+    transition: opacity .5s;
+    opacity: 0;
+    border-radius: 5px;
+  }
+
+  .cookie-popup.hide {
+      display:none !important;
+  }
+  .cookie-popup--short {
+    right: none;
+    width: 21.875rem; 
+  }
+  .cookie-popup--dark {
+    background: #dac580;
+    color: #212529;
+  }
+  .cookie-popup--not-accepted {
+    opacity: 1;
+    animation: cookie-popup-in .5s ease forwards;  
+  z-index: 9;
+  }
+  .cookie-popup--accepted {
+    opacity: 0;
+  }
+  .cookie-popup a {
+    color: #212529;
+  }
+  .cookie-popup a:visited {
+    color: #212529;
+    text-decoration: none;
+  }
+  .cookie-popup-actions {
+    flex: 1;
+    text-align: right;
+  }
+  .cookie-popup-actions button {
+    color: #212529;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:  0.75rem;
+    padding: 0;
+    cursor: pointer;
+  }
+  .cookie-popup-actions button:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes cookie-popup-in {
+    from { bottom: -6.25rem; }
+    to { bottom: 1.25rem; }
+  }
+  </style>
+
+ <div class="cookie-popup cookie-popup--short cookie-popup--dark">
+    <a href="#" id="pop_up_link">
+    <div>
+    <strong>Test</strong><br>
+    <p>Tekst</p>
+    </div>
+    </a>
+    <div class="cookie-popup-actions">
+      <button>X</button>
+    </div>
+  </div>
+
+
+
+
+ <script>
+  
+  /* common fuctions */
+  function el(selector) { return document.querySelector(selector) }
+  function els(selector) { return document.querySelectorAll(selector) }
+  function on(selector, event, action) { els(selector).forEach(e => e.addEventListener(event, action)) }
+  function cookie(name) { 
+    let c = document.cookie.split('; ').find(cookie => cookie && cookie.startsWith(name+'='))
+    return c ? c.split('=')[1] : false; 
+  }
+  
+  /* popup button hanler */
+  on('.cookie-popup button', 'click', () => {
+    el('.cookie-popup').classList.add('cookie-popup--accepted');
+    document.cookie = `cookie-accepted=true`
+  });
+  
+  /* popup init hanler */
+  if (cookie('cookie-accepted') !== "true") {
+    el('.cookie-popup').classList.add('cookie-popup--not-accepted');
+  }
+  
+  
+  /* page buttons handlers */
+  
+  function _reset() {
+    document.cookie = 'cookie-accepted=false'; 
+    document.location.reload();
+  }
+  
+  function _switchMode(cssClass) {
+    el('.cookie-popup').classList.toggle(cssClass);
+  }
+  </script>
+
+
 <?php wp_footer(); ?>
 
 
