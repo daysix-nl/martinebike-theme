@@ -166,6 +166,7 @@
   }
   .cookie-popup--accepted {
     opacity: 0;
+    display:none;
   }
   .cookie-popup a {
     color: #fff;
