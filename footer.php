@@ -133,7 +133,6 @@
 .cookie-popup p {
   
     font-size: 0.875rem;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
@@ -161,6 +160,7 @@
   }
   .cookie-popup--not-accepted {
     opacity: 1;
+    display: flex;
     animation: cookie-popup-in .5s ease forwards;  
   z-index: 9;
   }
