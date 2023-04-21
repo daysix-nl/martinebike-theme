@@ -148,6 +148,11 @@
     border-radius: 5px;
   }
 
+  .cookie-popup p {
+    font-size: 0.875rem;
+    color: #fff;
+  }
+
   .cookie-popup.hide {
       display:none !important;
   }
@@ -156,8 +161,8 @@
     width: 21.875rem; 
   }
   .cookie-popup--dark {
-    background: #dac580;
-    color: #212529;
+    background: #8ebf31;
+    color: #fff;
   }
   .cookie-popup--not-accepted {
     opacity: 1;
@@ -168,10 +173,10 @@
     opacity: 0;
   }
   .cookie-popup a {
-    color: #212529;
+    color: #fff;
   }
   .cookie-popup a:visited {
-    color: #212529;
+    color: #fff;
     text-decoration: none;
   }
   .cookie-popup-actions {
@@ -179,7 +184,7 @@
     text-align: right;
   }
   .cookie-popup-actions button {
-    color: #212529;
+    color: #fff;
     border: none;
     background: none;
     font-family: inherit;
