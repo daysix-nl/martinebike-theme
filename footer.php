@@ -204,8 +204,8 @@
  <div class="cookie-popup cookie-popup--short cookie-popup--dark">
 
     <div>
-    <strong>Test</strong><br>
-    <p>Tekst</p>
+    <strong><?php the_field('popup_titel', 'option'); ?></strong><br>
+    <p><?php the_field('popup_tekst', 'option'); ?></p>
     </div>
  
     <div class="cookie-popup-actions">
