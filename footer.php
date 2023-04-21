@@ -118,7 +118,7 @@
     </section>
     <section class="h-4 w-full bg-blue/20">
         <div class="container flex flex-col h-full justify-center">
-            <p class="text-white text-14 leading-14"><?php the_field('slot', 'option'); ?></p>
+            <p class="text-black text-14 leading-14"><?php the_field('slot', 'option'); ?></p>
         </div>
     </section>
 </footer>
