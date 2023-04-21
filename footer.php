@@ -133,6 +133,7 @@
 .cookie-popup p {
   
     font-size: 0.875rem;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
@@ -160,13 +161,11 @@
   }
   .cookie-popup--not-accepted {
     opacity: 1;
-    display: flex;
     animation: cookie-popup-in .5s ease forwards;  
   z-index: 9;
   }
   .cookie-popup--accepted {
     opacity: 0;
-    display:none;
   }
   .cookie-popup a {
     color: #fff;
@@ -206,7 +205,8 @@
   }
   </style>
 
- <div class="<?php the_field('tonen', 'option'); ?> cookie-popup cookie-popup--short cookie-popup--dark">
+<div class="<?php the_field('tonen', 'option'); ?>">
+ <div class="cookie-popup cookie-popup--short cookie-popup--dark">
 
     <div>
     <strong><?php the_field('popup_titel', 'option'); ?></strong><br>
@@ -217,7 +217,7 @@
       <button>X</button>
     </div>
   </div>
-
+</div>
 
 
 
