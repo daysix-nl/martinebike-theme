@@ -130,7 +130,7 @@
 
 
 
-.cookie-popup {
+.cookie-popup p {
   
     font-size: 0.875rem;
     display: flex;
