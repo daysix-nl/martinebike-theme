@@ -205,8 +205,8 @@
   }
   </style>
 
-<div class="<?php the_field('tonen', 'option'); ?>">
- <div class="cookie-popup cookie-popup--short cookie-popup--dark">
+
+ <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php the_field('tonen', 'option'); ?>">
 
     <div>
     <strong><?php the_field('popup_titel', 'option'); ?></strong><br>
@@ -217,7 +217,7 @@
       <button>X</button>
     </div>
   </div>
-</div>
+
 
 
 
