@@ -10,7 +10,7 @@
                 <tr>
                 <?php if( have_rows('inner_tables') ):  ?>
                     <?php while( have_rows('inner_tables') ): the_row();  ?>
-                        <<?php echo(($count === 0) ?"th": "td") ?> class="text-darkblue"><span class="flex flex-ro gap-1"><?php the_sub_field('text');?><?php if(get_sub_field('icon_image')): ?><img src="/wp-content/themes/day-six/img/icons-acf/<?php the_sub_field('icon_image');?>.svg" alt=""> <?php endif; ?></span></<?php echo(($count == 1) ? "th": "td") ?>>
+                        <<?php echo(($count === 0) ?"th": "td") ?> class="text-darkblue"><span class="flex flex-ro gap-1"><?php the_sub_field('text');?><?php if(get_sub_field('icon_image')): ?><img src="/wp-content/themes/martinsebike-theme/img/icons-acf/<?php the_sub_field('icon_image');?>.svg" alt=""> <?php endif; ?></span></<?php echo(($count == 1) ? "th": "td") ?>>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 </tr>

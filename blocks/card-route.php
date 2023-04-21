@@ -54,5 +54,5 @@
         </div>
     </article>
 
-    <img class="absolute top-10 right-0 w-full h-full -z-10 object-cover hidden md:block" src="/wp-content/themes/day-six/img/Double-happiness.png" alt="">
+    <img class="absolute top-10 right-0 w-full h-full -z-10 object-cover hidden md:block" src="/wp-content/themes/martinsebike-theme/img/Double-happiness.png" alt="">
 </section>

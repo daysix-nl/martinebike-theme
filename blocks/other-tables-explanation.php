@@ -7,7 +7,7 @@
         <?php if( have_rows('explanation') ): ?>
             <?php while( have_rows('explanation') ): the_row();  ?>
                 <div class="col-span-3 md:col-span-1 p-2 bg-yellow flex items-center rounded-md">
-                    <?php if(get_sub_field('icon_image')): ?><img class="h-2 img-icon" src="/wp-content/themes/day-six/img/icons-acf/<?php the_sub_field('icon_image');?>.svg" alt=""> <?php endif; ?>
+                    <?php if(get_sub_field('icon_image')): ?><img class="h-2 img-icon" src="/wp-content/themes/martinsebike-theme/img/icons-acf/<?php the_sub_field('icon_image');?>.svg" alt=""> <?php endif; ?>
                     <p class="text-white font-medium text-16 leading-26"><?php the_sub_field('text'); ?></p>
                 </div>
             <?php endwhile; ?>

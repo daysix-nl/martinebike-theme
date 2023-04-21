@@ -5,7 +5,7 @@
             <?php while( have_rows('card_basic') ): the_row(); ?>
                 <li class="col-span-3 lg:col-span-1 clip-path flex flex-col <?php echo((get_sub_field('background-color')) ? "bg-black" : "bg-roze") ?>">
                     <div class="grid gap-[35px] px-4 pt-4 pb-6   ">
-                            <img src="/wp-content/themes/day-six/img/icons-acf/<?php the_sub_field('icon');?>.svg"  />
+                            <img src="/wp-content/themes/martinsebike-theme/img/icons-acf/<?php the_sub_field('icon');?>.svg"  />
                         <h3 class="text-white text-35 leading-40 font-bold"><?php the_sub_field('title'); ?></h3>
                         <p class="text-white text-16 leading-26"><?php the_sub_field('text'); ?></p>
                     </div>
