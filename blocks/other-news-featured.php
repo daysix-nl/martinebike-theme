@@ -3,20 +3,17 @@
     <div class="container mb-4 max-w-[800px]">
         <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-darkblue text-center mx-auto"><?php the_field('title'); ?></h3>
         <p class="text-black text-16 leading-26 font-normal text-center md:px-3"><?php the_field('text'); ?></p>
-            <div class="flex flex-row flex-wrap gap-1 socials mx-auto">
-                        <a class="button" href="#" target="_blank">
+            <div class="flex flex-row flex-wrap gap-1 socials w-fit mx-auto mt-3">
+                        <a class="button" href="https://www.facebook.com/MartinsEBike" target="_blank">
                         <?php include get_template_directory() . '/img/icons/facebook.php'; ?>
                         </a>
-                        <a class="button" href="#" target="_blank">
+                        <a class="button" href="https://www.instagram.com/martinsebike/" target="_blank">
                         <?php include get_template_directory() . '/img/icons/instagram.php'; ?>
                         </a>
-                        <a class="button" href="#" target="_blank">
-                        <?php include get_template_directory() . '/img/icons/twitter.php'; ?>
-                        </a>
-                        <a class="button" href="#" target="_blank">
+                        <a class="button" href="https://www.tripadvisor.com/Attraction_Review-g262054-d3895039-Reviews-Martin_s_E_Bike-Almancil_Loule_Faro_District_Algarve.html" target="_blank">
                         <?php include get_template_directory() . '/img/icons/trustpilot.php'; ?>
                         </a>
-                        <a class="button" href="#" target="_blank">
+                        <a class="button" href="https://martinsebike.com/" target="_blank">
                             <?php include get_template_directory() . '/img/icons/google.php'; ?>
                         </a>
      
