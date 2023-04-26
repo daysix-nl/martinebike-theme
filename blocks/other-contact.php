@@ -15,6 +15,7 @@
                         <p><?php the_field('adres', 'option'); ?></p>
                         <a href="tel:+<?php the_field('Telefoonnummer', 'option'); ?>"><?php the_field('Telefoonnummer', 'option'); ?></a>
                         <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
+                         <a class="pt-2" href="tel:+351926890243">+351926890243 <?php if(ICL_LANGUAGE_CODE=='en'): ?>emergency number for rental clients<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>noodnummer voor verhuurklanten<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>número de emergência para clientes de aluguel<?php endif; ?></a>
                     </div>
                 </div>
                 <div class="col-span-2 md:col-span-1">
