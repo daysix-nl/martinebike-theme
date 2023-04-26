@@ -20,6 +20,7 @@
         <div class="absolute right-0 top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
     </section>
      <div class="container mx-auto custom-post-news pr-10">
+        <p class="text-13 mb-1"><?php the_date(); ?></p>
         <?php the_content(); ?>
      </div>
      <section class="my-8 md:my-10">
