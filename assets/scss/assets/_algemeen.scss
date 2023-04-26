@@ -1,53 +1,61 @@
 html {
   scroll-behavior: smooth;
 }
+
 // main {
 //   overflow-x: hidden;
 // }
 
-.page-field, .acf-block-body {
-.simpleParallax {
-  border-radius: 20px;
-}
-.absolute,
-.z-0 {
+.page-field,
+.acf-block-body {
   .simpleParallax {
-    border-radius: 0px;
+    border-radius: 20px;
   }
-}
 
-.text-block ~ .text-block {
-  margin-top: 15px;
-}
-
-ul.list-inside {
-  list-style: none;
-
-  li {
-    display: flex;
+  .absolute,
+  .z-0 {
+    .simpleParallax {
+      border-radius: 0px;
+    }
   }
-}
 
-ul.list-inside li::before {
-  content: "·";
-  color: #8ebf31;
-  font-size: 70px;
-  vertical-align: middle;
-  line-height: 16px;
-  margin-right: 20px;
-}
+  .text-block~.text-block {
+    margin-top: 15px;
+  }
 
-p {
-  a {
+  ul.list-inside {
+    list-style: none;
+
+    li {
+      display: flex;
+    }
+  }
+
+  ul.list-inside li::before {
+    content: "·";
     color: #8ebf31;
+    font-size: 70px;
+    vertical-align: middle;
+    line-height: 16px;
+    margin-right: 20px;
   }
-}
 
-.block-wysiwyg {
-  iframe {
-    aspect-ratio: 16/9;
-    margin-top: 20px;
+  p {
+    a {
+      color: #8ebf31;
+    }
   }
-}
+
+  .block-wysiwyg {
+    iframe {
+      aspect-ratio: 16/9;
+      margin-top: 20px;
+    }
+  }
+
+  .socials svg {
+    width: 25px;
+    height: auto;
+  }
 
 }
