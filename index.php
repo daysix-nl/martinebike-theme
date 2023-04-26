@@ -16,7 +16,7 @@ get_header(); ?>
         </div>
 </section> -->
 <?php
-header(‘Location: https://martinsebike.com/’); 
+header('Location: https://martinsebike.com/'); 
 ?>
 </main>
 <?php get_footer(); ?>
