@@ -3,63 +3,24 @@
     <div class="container mb-4 max-w-[800px]">
         <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-darkblue text-center mx-auto"><?php the_field('title'); ?></h3>
         <p class="text-black text-16 leading-26 font-normal text-center md:px-3"><?php the_field('text'); ?></p>
-        <!-- <div class="flex flex-row flex-wrap gap-1">
-                    <?php 
-                    $link = get_field('facebook', 'option');
-                    if( $link ): 
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+            <div class="text-center">
+                        <a class="button" href="#" target="_blank">
                         <?php include get_template_directory() . '/img/icons/facebook.php'; ?>
                         </a>
-                    <?php endif; ?>
-                    <?php 
-                    $link = get_field('instagram', 'option');
-                    if( $link ): 
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                        <a class="button" href="#" target="_blank">
                         <?php include get_template_directory() . '/img/icons/instagram.php'; ?>
                         </a>
-                    <?php endif; ?>
-                    <?php 
-                    $link = get_field('twitter', 'option');
-                    if( $link ): 
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                        <a class="button" href="#" target="_blank">
                         <?php include get_template_directory() . '/img/icons/twitter.php'; ?>
                         </a>
-                    <?php endif; ?>
-                    <?php 
-                    $link = get_field('tripadvisor', 'option');
-                    if( $link ): 
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                        <a class="button" href="#" target="_blank">
                         <?php include get_template_directory() . '/img/icons/trustpilot.php'; ?>
                         </a>
-                    <?php endif; ?>
-                    <?php 
-                    $link = get_field('google', 'option');
-                    if( $link ): 
-                        $link_url = $link['url'];
-                        $link_title = $link['title'];
-                        $link_target = $link['target'] ? $link['target'] : '_self';
-                        ?>
-                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+                        <a class="button" href="#" target="_blank">
                             <?php include get_template_directory() . '/img/icons/google.php'; ?>
                         </a>
-                    <?php endif; ?>
-                </div> -->
+     
+            </div> 
     </div>
     <div class="container grid grid-cols-3 gap-3 gap-x-5">
             <?php
