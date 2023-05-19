@@ -35,11 +35,11 @@
         </div>
         <div class="col-span-2 md:col-span-1 min-h-[350px]">
             <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813634.9316190607!2d-8.22474!3d37.194019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab3bc29b104ff%3A0x19e21b337abf9249!2sAv.%20Duarte%20Pacheco%2048%2C%208135-104%20Almancil%2C%20Portugal!5e0!3m2!1sen!2sus!4v1671532885363!5m2!1snl!2en" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813634.9316190607!2d-8.22474!3d37.194019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab3bc29b104ff%3A0x19e21b337abf9249!2sAv.%20Duarte%20Pacheco%2048%2C%208135-104%20Almancil%2C%20Portugal!5e0!3m2!1sen!2sus!4v1671532885363!5m2!1sen!2sen" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813634.9316190607!2d-8.22474!3d37.194019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab3bc29b104ff%3A0x19e21b337abf9249!2sAv.%20Duarte%20Pacheco%2048%2C%208135-104%20Almancil%2C%20Portugal!5e0!3m2!1snl!2sus!4v1671532885363!5m2!1snl!2nl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813634.9316190607!2d-8.22474!3d37.194019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab3bc29b104ff%3A0x19e21b337abf9249!2sAv.%20Duarte%20Pacheco%2048%2C%208135-104%20Almancil%2C%20Portugal!5e0!3m2!1snl!2snl!4v1671532885363!5m2!1snl!2snl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813634.9316190607!2d-8.22474!3d37.194019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab3bc29b104ff%3A0x19e21b337abf9249!2sAv.%20Duarte%20Pacheco%2048%2C%208135-104%20Almancil%2C%20Portugal!5e0!3m2!1spt!2spt!4v1671532885363!5m2!1snl!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d813634.9316190607!2d-8.22474!3d37.194019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab3bc29b104ff%3A0x19e21b337abf9249!2sAv.%20Duarte%20Pacheco%2048%2C%208135-104%20Almancil%2C%20Portugal!5e0!3m2!1spt!2spt!4v1671532885363!5m2!1spt!2spt" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <?php endif; ?>
             
         </div>
