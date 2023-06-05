@@ -1,5 +1,5 @@
 <section class="mobile:h-[80vh] h-[30vh] md:h-[55vh] w-screen relative overflow-hidden">
-    <img class="w-full h-full object-cover absolute top-0 right-0  image-full" src="https://martins.daysix.nl/wp-content/uploads/2023/02/MARTINS-E-BIKE-9194-scaled.jpg" alt="">
+    <img class="w-full h-full object-cover absolute top-0 right-0  image-full" src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-9194-scaled.jpg" alt="">
     <div class="container flex flex-col justify-center gap-3 z-2 h-full relative z-[2]">
         <h1 class="text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Passeio de teste<?php endif; ?></h1>
         <p class="text-white leading-20 text-20 md:leading-28 md:text-28 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Choose a bike and book a test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Kies een fiets en boek een proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Escolha uma bicicleta e marque um test ride<?php endif; ?></p>

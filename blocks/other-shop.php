@@ -1,5 +1,5 @@
 <section class="mobile:h-[80vh] h-[30vh] md:h-[55vh] w-screen relative overflow-hidden">
-    <img class="w-full h-full object-cover absolute top-0 right-0  image-full" src="https://martins.daysix.nl/wp-content/uploads/2023/02/MARTINS-E-BIKE-9194-scaled.jpg" alt="">
+    <img class="w-full h-full object-cover absolute top-0 right-0  image-full" src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-9194-scaled.jpg" alt="">
     <div class="container flex flex-col justify-center gap-3 z-2 h-full relative z-[2]">
         <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
     </div>
