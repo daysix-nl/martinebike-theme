@@ -25,7 +25,7 @@
      </div>
      <section class="my-8 md:my-10">
     <div class="container mb-4 max-w-[800px]">
-        <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-darkblue text-center mx-auto"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Last news<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Laatste nieuws<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Últimas Novidades<?php endif; ?></h3>
+        <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-darkblue text-center mx-auto"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Lastest news<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Laatste nieuws<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Últimas Novidades<?php endif; ?></h3>
     </div>
     <div class="container grid grid-cols-3 gap-3 gap-x-5">
             <?php
