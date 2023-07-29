@@ -1031,7 +1031,7 @@ function customize_dashboard_menu() {
             'edit.php?post_type=acf-field-group',
             'edit-comments.php',
             'themes.php',
-            'plugins.php',
+            // 'plugins.php',
             // 'users.php',
             'options-general.php',
             'tools.php',
@@ -1044,7 +1044,7 @@ function customize_dashboard_menu() {
             'toplevel_page_wppusher', 
             'toplevel_page_ai1wm_export',
             'menu-top toplevel_page_mlang',
-            'toplevel_page_rank-math',
+            // 'toplevel_page_rank-math',
             // Voeg hier andere classes toe van de items die je wilt verbergen op basis van de class.
         );
 
