@@ -53,7 +53,7 @@
                 <?php
                 while($product->have_posts()) : $product->the_post(); $post_id = get_the_ID(); ?>
                     <li class="col-span-3 md:col-span-1 flex flex-col p-1 pt-2 hover:scale-105 duration-300">
-                        <a class="grid grid-cols-3 gap-2" href="<?php the_permalink(); ?>/?id=id<?php the_field('product_id', $post_id); ?>">
+                        <a class="grid grid-cols-3 gap-2" href="<?php the_permalink(); ?>?id=id<?php the_field('product_id', $post_id); ?>">
                         
                                 <div class="col-span-1 md:col-span-3 h-[150px] flex flex-col border-[#e6e6e6]">
                                     <img class="max-w-[500px] h-auto w-full mx-auto my-auto"  src="<?php the_field('product_image', $post_id);?>" alt="" />
