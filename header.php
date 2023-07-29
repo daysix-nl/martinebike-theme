@@ -57,7 +57,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <?php endif; ?>
             </div>
             <div class="col-span-1 flex justify-center">
-                <a href="<?php if(ICL_LANGUAGE_CODE=='en'): ?>/<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>/nl<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>/pt<?php endif; ?>">
+                <a href="<?php if(ICL_LANGUAGE_CODE=='en'): ?>/en<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>/nl<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>/pt<?php endif; ?>">
                 <?php include get_template_directory() . '/img/logo.php'; ?>
                 </a>
             </div>
