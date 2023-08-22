@@ -1,7 +1,8 @@
-<section class="h-screen w-screen relative ">
+<section class="h-screen w-screen relative">
     <!-- <img class="w-full h-full object-cover absolute top-0 right-1 -z-10" src="https://martinsebike.com/wp-content/uploads/2021/02/180522_Klever_Bikes_B_Comfort_Blue_0546-1024x683.jpg" alt=""> -->
     <video class="w-full h-full object-cover absolute top-0 right-0 -z-10" autoplay="" loop="" muted="" playsinline  class="absolute left-0 top-0 -z-10 h-[80vh] md:h-full md:w-full object-cover">
-        <source src="<?php the_field('video');?>">
+        <source src="<?php the_field('video');?>#t=0.001" type="video/mp4">
+        Your browser does not support HTML5 video.
     </video>
     <div class="container relative z-[2] h-full justify-center flex flex-col">
         <h1 class="text-white leading-35 text-35 md:leading-70 md:text-65 font-medium pb-3"><?php the_field('title');?></h1>

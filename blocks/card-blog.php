@@ -1,5 +1,5 @@
 <!-- CARD-BLOG -->
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container"> 
         <div class="grid grid-cols-1  md:grid-cols-3 gap-3">
             <?php

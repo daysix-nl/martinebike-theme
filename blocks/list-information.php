@@ -1,5 +1,5 @@
 <!-- LIST-INFORMATION -->
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container grid gap-3 md:pr-[150px]">
         <?php if(get_field('title')): ?>
             <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-darkblue md:w-[90%]"><?php the_field('title'); ?></h3>

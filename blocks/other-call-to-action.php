@@ -1,5 +1,5 @@
 <!-- OTHER-CALL-TO-ACTION -->
-<section class="my-8 md:my-10 relative md:h-screen">
+<section class="mt-8 md:mt-10 relative md:h-screen overflow-hidden">
     <article class="relative h-fit w-full bg-gradient-grey">
         <div class="container flex flex-col justify-center bg-grey py-10 ">
             <div class="md:w-[70%] mx-auto flex flex-col gap-3">

@@ -1,5 +1,5 @@
 <!-- OTHER-QUOTE-BLOCK -->
-<section class="my-8 md:my-10  relative">
+<section class="my-8 md:my-10  relative bg-white">
     <div class="container flex flex-col justify-center <?php the_field('background-color') ?> <?php the_field('padding') ?>">
         <div class=" <?php the_field('padding') ?>">
             <h3 class="text-25 leading-30 font-normal text-[#84bd00] text-center md:text-start"><?php the_field('subtitle'); ?></h3>

@@ -1,5 +1,5 @@
 <!-- OTHER-ACCORDION -->
-<article class="my-8 md:my-10 relative">
+<article class="my-8 md:my-10 relative bg-white">
     <?php if(get_field('navigation_accordion')): ?>
         <section class="mb-5 md:mb-7">
             <div class="container">

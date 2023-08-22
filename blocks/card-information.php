@@ -1,4 +1,4 @@
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container">
         <?php if(get_field('title')): ?>
             <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-darkblue md:w-[80%] mb-5"><?php the_field('title'); ?></h3>

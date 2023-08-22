@@ -1,8 +1,8 @@
 <!-- LIST-BLOCKS -->
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container grid md:pr-[150px]">
         <?php if(get_field('title')): ?>
-            <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-darkblue text-darkblue md:w-[70%] mb-3 "><?php the_field('title'); ?></h3>
+            <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-darkblue md:w-[70%] mb-3 "><?php the_field('title'); ?></h3>
         <?php endif; ?>
         <?php if(get_field('text')): ?>
             <p class="text-black text-16 leading-26 font-normal"><?php the_field('text'); ?></p>

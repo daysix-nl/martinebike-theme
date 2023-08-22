@@ -1,5 +1,5 @@
 <!-- CARD-ROUTE -->
-<section id="route" class="my-8 md:my-10 relative">
+<section id="route" class="my-8 md:my-10 relative bg-white">
     <div class="container mb-3 md:mb-5">
         <h2 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-darkblue md:w-[70%] mb-2"><?php the_field('title') ?></h2>    
         <p class="text-black text-16 leading-26 font-normal md:w-[80%]"><?php the_field('text') ?></p>
@@ -20,7 +20,7 @@
     <?php endif; ?>
 </section>
 
-<section class="<?php echo((get_field('margin')) ? " md:my-[140px] my-[100px] " : "") ?> relative h-screen">
+<section class="<?php echo((get_field('margin')) ? " md:my-[140px] my-[100px] " : "") ?>  relative h-screen overflow-hidden">
     <article class="relative h-fit w-full bg-gradient-grey">
         <div class="container flex flex-col justify-center bg-grey py-10 ">
             <div class="md:w-[70%] mx-auto flex flex-col gap-3">
@@ -54,5 +54,5 @@
         </div>
     </article>
 
-    <img class="absolute top-10 right-0 w-full h-full -z-10 object-cover hidden md:block" src="/wp-content/themes/martinsebike-theme/img/Double-happiness.png" alt="">
+    <img class="absolute top-10 right-0 w-full h-full -z-10 object-cover hidden md:block" src="<?php the_field('image_call');?>" alt="">
 </section>

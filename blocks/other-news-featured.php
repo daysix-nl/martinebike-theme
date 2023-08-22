@@ -1,5 +1,5 @@
 <!-- OTHER-NEWS -->
-<section class="my-8 md:my-10">
+<section class="my-8 md:my-10 bg-white">
     <div class="container mb-4 max-w-[800px]">
         <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-darkblue text-center mx-auto"><?php the_field('title'); ?></h3>
         <p class="text-black text-16 leading-26 font-normal text-center md:px-3"><?php the_field('text'); ?></p>

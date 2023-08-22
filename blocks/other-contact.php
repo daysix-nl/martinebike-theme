@@ -1,5 +1,5 @@
 <!-- OTHER-CONTACT -->
-<section class="my-8 md:my-10">
+<section class="my-8 md:my-10 bg-white">
     <div class="container grid grid-cols-2 gap-5">
 
         <div class="col-span-2 md:col-span-1">

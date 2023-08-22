@@ -40,3 +40,7 @@
 <section class="mb-6 md:mb-8"></section>
 <section class="mb-3"></section>
 <section class="mb-0 line-through"></section>
+
+<div class="justify-start"></div>
+<div class="justify-center"></div>
+<div class="justify-end"></div>

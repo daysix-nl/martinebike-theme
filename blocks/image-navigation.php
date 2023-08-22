@@ -1,7 +1,7 @@
 <!-- IMAGE-NAVIGATION -->
-<section class="mt-6 md:mt-8 mb-8 md:mb-10">
+<section class="mt-6 md:mt-8 mb-8 md:mb-10 bg-white">
     <div class="container md:w-[60%]">
-        <h1 class="text-center text-black text-40 leading-50 md:text-50 md:leading-60 font-bold mb-2 md:mb-3 "><?php the_field('title'); ?></h1>
+        <!-- <h2 class="text-center text-black text-40 leading-50 md:text-50 md:leading-60 font-bold mb-2 md:mb-3 "><?php the_field('title'); ?></h2> -->
     </div>
     <div class="container grid grid-cols-4 md:grid-rows-2 gap-2 mt-5 md:mt-6 h-[1000px] sm:h-[700px] md:h-[600px]">
         <a href="<?php the_field('link_1'); ?>" class="col-span-4 sm:col-span-2 md:col-span-2 md:row-span-2 relative  overflow-hidden card-navigation">

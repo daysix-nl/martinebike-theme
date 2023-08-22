@@ -1,5 +1,5 @@
 <!-- LIST-SCROLL -->
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container grid grid-cols-2">
         <div class="col-span-2 md:col-span-1 <?php echo (get_field('list_sticky') ? "md:h-screen md:sticky md:top-0" : ""); ?> ">
             <div class="w-full h-full relative scroll-list <?php echo (get_field('list_sticky') ? "md:pt-10" : ""); ?> ">

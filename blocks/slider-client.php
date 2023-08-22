@@ -1,9 +1,9 @@
 <!-- SLIDER-CLIENT -->
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="">
     <div class="container mb-3 md:mb-5">
         <?php if(get_field('title')): ?>
-            <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-darkblue text-darkblue md:w-[50%] max-w-[400px]"><?php the_field('title'); ?></h3>
+            <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-darkblue md:w-[50%] max-w-[400px]"><?php the_field('title'); ?></h3>
         <?php endif; ?>
         <?php if(get_field('text')): ?>
             <p class="text-black text-16 leading-26 font-normal md:w-[60%] mt-3 max-w-[500px]"><?php the_field('text'); ?></p>

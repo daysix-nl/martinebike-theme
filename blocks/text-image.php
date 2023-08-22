@@ -1,5 +1,5 @@
-<!-- TEXT-IMAGE -->
-<section class="my-8 md:my-10 relative">
+<!-- TEXT-IMAGE  -->
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container grid grid-cols-2 gap-3">
         <div class="order-1 md:order-0 col-span-2 md:col-span-1">
             <?php if(get_field('title')): ?>
@@ -21,8 +21,9 @@
         <div class="order-0 md:order-1 col-span-2 md:col-span-1 md:pl-10">
             <?php 
             $image = get_field('image');
+            $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             if( !empty( $image ) ): ?>
-            <img class="w-full object-cover aspect-video md:aspect-square rounded-2xl " src="<?php the_field('image'); ?>" alt="">
+            <img class="w-full object-cover aspect-video md:aspect-square rounded-2xl " src="<?php the_field('image'); ?>" alt="<?php echo $image_alt; ?>">
             <?php endif; ?>
         </div>
     </div>

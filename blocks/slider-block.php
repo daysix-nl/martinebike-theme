@@ -1,5 +1,5 @@
 <!-- SLIDE-BLOCK -->
-<section class="my-8 md:my-10">
+<section class="my-8 md:my-10 bg-white">
     <div class="container">
 
         <?php if( have_rows('slider-tabs-repeater') ): ?>

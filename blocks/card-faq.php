@@ -1,5 +1,5 @@
 <!-- CARD-FAQ -->
-<section class="my-8 md:my-10 relative">
+<section class="my-8 md:my-10 relative bg-white">
     <div class="container mb-3 md:mb-5">
         <h2 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-darkblue md:w-[70%]"><?php the_field('title') ?></h2>    
     </div>

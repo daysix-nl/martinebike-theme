@@ -1,5 +1,5 @@
 <section>
-    <div class="container grid grid-cols-1 md:grid-cols-3 gap-3">
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-3 bg-white">
         <div class="col-span-1">
             <img src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-6450-scaled.jpg" alt="" class="w-full aspect-video object-cover max-h-[300px]">
             <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-darkblue md:w-[90%] pt-3">CLASSIC</h3>

@@ -22,7 +22,7 @@
             <img  src="<?php the_field('product_image');?>" alt="<?php the_title();?>" />
         </article>
         <article class="col-span-3 lg:col-span-1 p-2 ">
-            <h1 class="text-30 leading-40 lg:text-35 lg:leading-45 font-medium lg:font-medium text-darkblue mb-2"><?php the_title() ?></h1>
+            <h2 class="text-30 leading-40 lg:text-35 lg:leading-45 font-medium lg:font-medium text-darkblue mb-2"><?php the_title() ?></h2>
             <div class="flex flex-row flex-wrap">
                 <p class=" text-25 leading-28 font-bold mb-2 <?php echo((get_field("product_sale") === "yes") ? "line-through pr-1 text-darkblue/20" : "text-green"); ?>">&#8364;<?php the_field('product_price'); ?></p> 
                 <?php if(get_field("product_sale") === "yes"): ?>

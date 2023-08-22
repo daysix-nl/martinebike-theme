@@ -1,5 +1,5 @@
 <!-- OTHER-NEWS -->
-<section class="my-8 md:my-10">
+<section class="my-8 md:my-10 bg-white">
     <div class="container grid grid-cols-3 gap-3 gap-x-5">
             <?php
                 $loop = new WP_Query( array(

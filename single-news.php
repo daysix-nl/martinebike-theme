@@ -15,13 +15,16 @@
     <section class="mobile:h-[80vh] h-[30vh] md:h-[55vh] w-screen relative overflow-hidden mb-8 md:mtb-10">
         <img class="w-full h-full aspect-video object-cover mb-1 absolute top-0 left-0 right-0" src="<?php echo get_the_post_thumbnail_url(); ?>">
         <div class="container flex flex-col justify-center gap-3 z-2 h-full z-[2] relative">
-            <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title pr-10"><?php the_title(); ?></h1>
+            <h1 class="text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title pr-10 hidden md:block"><?php the_title(); ?></h1>
         </div>
         <div class="absolute right-0 top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
     </section>
-     <div class="container mx-auto custom-post-news pr-10">
-        <p class="text-13 mb-1"><?php echo get_the_date(); ?></p>
-        <?php the_content(); ?>
+     <div class="container mx-auto  pr-10">
+        <h1 class="text-darkblue leading-50 text-50 md:leading-70 md:text-65 font-medium mb-3 md:hidden"><?php the_title(); ?></h1>
+        <p class="text-14 mb-1 text-green"><?php echo get_the_date(); ?></p>
+        <div class="block-wysiwyg">
+            <?php the_content(); ?>
+        </div>
      </div>
      <section class="my-8 md:my-10">
     <div class="container mb-4 max-w-[800px]">
