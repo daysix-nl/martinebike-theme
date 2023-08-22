@@ -117,11 +117,7 @@
                                                 </section>
                                                     <?php
                                                 } else { ?>
-                                                 <section class="relative bg-white">
-                                                 <div class="container block-wysiwyg">
-                                                        <?php the_field('default_shop_tekst', 'option');?>
-                                                 </div>
-                                                </section>
+                                               
                                                 <?php
                                                 }
                                             ?>
