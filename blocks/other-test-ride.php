@@ -9,7 +9,7 @@
                         <?php
                             $showcategorie = get_sub_field('slug', 'option');
                             if (strpos($currentUrl, $showcategorie) !== false) { 
-                                $showcategorieOk = get_sub_field('slug', 'option');
+                                $showcategorieOk = get_sub_field('titel', 'option');
                                 $visible = true; 
                             } ?>
                     <?php endif; ?>
