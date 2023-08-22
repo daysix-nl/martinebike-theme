@@ -19,7 +19,7 @@
                                     ?>
                         <?php endif; ?>
                     <?php endwhile;
-                    else { ?>
+                    elseif { ?>
                                             <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
                                         <?php
                                         }
