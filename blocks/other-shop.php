@@ -3,24 +3,27 @@
 <section class="mobile:h-[80vh] h-[30vh] md:h-[55vh] w-screen relative overflow-hidden bg-white">
     <img class="w-full h-full object-cover absolute top-0 right-0  image-full" src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-9194-scaled.jpg" alt="">
     <div class="container flex flex-col justify-center gap-3 z-2 h-full relative z-[2]">
-        <?php
-                if( have_rows('cpt_categorien', 'option') ): ?>
-                    <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
-                        <?php if( get_row_layout() == 'cpt_categorien_repeater'): ?>
-                            <?php
-                                    $showcategorie = get_sub_field('slug', 'option');
-                                        if (strpos($currentUrl, $showcategorie) !== false) { ?>
-                                            <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_sub_field('titel', 'option'); ?></h1>
-                                            <?php
-                                        } else { ?>
-                                            <!-- <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1> -->
-                                        <?php
-                                        }
-                                    ?>
-                        <?php endif; ?>
-                    <?php endwhile; ?>
-                  
-                <?php endif; ?>
+        <?php $visible = false; if( have_rows('cpt_categorien', 'option') ): ?>
+                <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
+                    <?php if( get_row_layout() == 'cpt_categorien_repeater'): ?>
+                        <?php
+                            $showcategorie = get_sub_field('slug', 'option');
+                            if (strpos($currentUrl, $showcategorie) !== false) { 
+                                $showcategorieOk = get_sub_field('titel', 'option');
+                                $visible = true; 
+                            } ?>
+                    <?php endif; ?>
+                <?php endwhile; 
+                if ($visible) { 
+                    $visible = true;
+                ?>
+                
+                   <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?= $showcategorieOk ?></h1>
+                <?php } else { ?>
+                       <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
+                <?php } ?>
+            <?php endif; ?>
+
         
     </div>
     <div class="absolute right-0 top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
