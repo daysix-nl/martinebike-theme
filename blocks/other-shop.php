@@ -13,12 +13,18 @@
                                             <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_sub_field('titel', 'option'); ?></h1>
                                             <?php
                                         } else { ?>
-                                            <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
+                                           
                                         <?php
                                         }
                                     ?>
                         <?php endif; ?>
-                    <?php endwhile; ?>
+                    <?php endwhile;
+                    else { ?>
+                                            <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
+                                        <?php
+                                        }
+                    ?>
+                  
                 <?php endif; ?>
         
     </div>
