@@ -3,28 +3,26 @@
 <section class="mobile:h-[80vh] h-[30vh] md:h-[55vh] w-screen relative overflow-hidden bg-white">
     <img class="w-full h-full object-cover absolute top-0 right-0  image-full" src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-9194-scaled.jpg" alt="">
     <div class="container flex flex-col justify-center gap-3 z-2 h-full relative z-[2]">
-             <?php
-                if( have_rows('cpt_categorien', 'option') ): ?>
-                    <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
-                        <?php if( get_row_layout() == 'cpt_categorien_repeater'): ?>
-                            <?php
-                                    $showcategorie = get_sub_field('slug', 'option');
-                                    print_r($showcategorie);
-
-                                    print_r($currentUrl);
-                                        if (strpos($currentUrl, $showcategorie) !== false) { ?>
-                                            <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_sub_field('titel', 'option'); ?></h1>
-                                            <?php
-                                        } else { ?>
-                                            <h1 class="text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Passeio de teste<?php endif; ?></h1>
-                                            <p class="text-white leading-20 text-20 md:leading-28 md:text-28 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Choose a bike and book a test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Kies een fiets en boek een proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Escolha uma bicicleta e marque um test ride<?php endif; ?></p>
-                                        <?php
-                                        }
-                                    ?>
-                        <?php endif; ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-    
+            <?php $visible = false; if( have_rows('cpt_categorien', 'option') ): ?>
+                <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
+                    <?php if( get_row_layout() == 'cpt_categorien_repeater'): ?>
+                        <?php
+                            $showcategorie = get_sub_field('slug', 'option');
+                            if (strpos($currentUrl, $showcategorie) !== false) { 
+                                $visible = true; 
+                            } ?>
+                    <?php endif; ?>
+                <?php endwhile; 
+                if ($visible) { 
+                    $visible = true;
+                ?>
+                
+                    <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_sub_field('titel', 'option'); ?></h1>
+                <?php } else { ?>
+                        <h1 class="text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Passeio de teste<?php endif; ?></h1>
+                        <p class="text-white leading-20 text-20 md:leading-28 md:text-28 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Choose a bike and book a test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Kies een fiets en boek een proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Escolha uma bicicleta e marque um test ride<?php endif; ?></p>
+                <?php } ?>
+            <?php endif; ?>
         </div>
     <div class="absolute right-0 top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
 </section>
