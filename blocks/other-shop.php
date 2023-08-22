@@ -109,31 +109,39 @@
 
 </section>
 
-        <?php
-                        if( have_rows('cpt_categorien', 'option') ): ?>
-                            <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
-                                <?php if( get_row_layout() == 'cpt_categorien_repeater'): ?>
+ <?php $visible = false; if( have_rows('cpt_categorien', 'option') ): ?>
+                <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
+                    <?php if( get_row_layout() == 'cpt_categorien_repeater'): ?>
+                        <?php
+                            $showcategorie = get_sub_field('slug', 'option');
+                            if (strpos($currentUrl, $showcategorie) !== false) { 
+                                $showcategorieOk = get_sub_field('overige_teksten', 'option');
+                                $visible = true; 
+                            } ?>
+                    <?php endif; ?>
+                <?php endwhile; 
+                if ($visible) { 
+                    $visible = true;
+                ?>
 
-                                
-                                    <?php
-                                            $showcategorie = get_sub_field('slug', 'option');
-                                                if (strpos($currentUrl, $showcategorie) !== false) { ?>
-                                                 <section class="relative bg-white">
-                                                 <div class="container block-wysiwyg">
-                                                        <?php the_sub_field('overige_teksten', 'option');?>
-                                                 </div>
+                                                <section class="relative bg-white">
+                                                    <div class="container block-wysiwyg">
+                                                            <?= $showcategorieOk ?>
+                                                    </div>
                                                 </section>
-                                                    <?php
-                                                } else { ?>
-                                                 <section class="relative bg-white">
+                
+                 
+                <?php } else { ?>
+                        <section class="relative bg-white">
                                                  <div class="container block-wysiwyg">
                                                         <?php the_field('default_shop_tekst', 'option');?>
                                                  </div>
                                                 </section>
-                                                <?php
-                                                }
-                                            ?>
-                                <?php endif; ?>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
+                <?php } ?>
+            <?php endif; ?>
+
+
+
+
+            
 
