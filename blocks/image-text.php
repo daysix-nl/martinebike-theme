@@ -1,7 +1,7 @@
 <!-- IMAGE-TEXT -->
 <?php $count = count(get_field('text_-_image')); ?>
 <section class="<?php the_field('background');?> <?php the_field('padding_top');?> <?php the_field('padding_bottom');?> <?php the_field('margin_top');?> <?php the_field('margin-bottom');?> relative bg-white">
-    <div  class="w-screen md:w-[50vw] h-full md:min-h-[550px] overflow-hidden md:absolute top-0  <?php echo((get_field('left__right')) ? (($count === 1) ? "left-0 px-2 md:px-0" : "left-[20px] px-2 md:pr-2") : (($count === 1) ? "right-0 px-2   md:px-0" : "right-[20px] px-2 md:pr-0 md:pl-2")) ?>    z-0">
+    <div  class="w-screen md:w-[50vw] h-full md:min-h-[550px] overflow-hidden md:absolute top-0  aspect-video md:aspect-[unset] <?php echo((get_field('left__right')) ? (($count === 1) ? "left-0 px-2 md:px-0" : "left-[20px] px-2 md:pr-2") : (($count === 1) ? "right-0 px-2   md:px-0" : "right-[20px] px-2 md:pr-0 md:pl-2")) ?>    z-0">
         <div class="relative grid  <?php echo(($count === 1) ? " col-span-1" : "grid-cols-2") ?> gap-2 h-full ">
             <?php if( have_rows('text_-_image') ): ?>
                 <?php $count = count(get_field('text_-_image')); ?>
