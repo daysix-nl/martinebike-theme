@@ -39,7 +39,7 @@
         $fade-in-delay: 0.1s;
         $start-delay: 0.2s;
 
-        @for $i from 1 through 6 {
+        @for $i from 1 through 7 {
           & a:nth-child(#{$i}) {
             animation: fade-in $fade-in-duration;
             animation-delay: ($fade-in-delay * ($i - 1)) + $start-delay;
@@ -53,7 +53,7 @@
         $fade-in-delay-button: 0.05s;
         $start-delay-button: 0.8s;
 
-        @for $i from 1 through 6 {
+        @for $i from 1 through 7 {
           & .bg-darkblue:nth-child(#{$i}) {
             animation: fade-in $fade-in-duration-button;
             animation-delay: ($fade-in-delay-button * ($i - 1)) + $start-delay-button;
