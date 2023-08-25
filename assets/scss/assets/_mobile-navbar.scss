@@ -51,7 +51,7 @@
       .content-overlay {
         $fade-in-duration-button: 0.4s;
         $fade-in-delay-button: 0.05s;
-        $start-delay-button: 1s;
+        $start-delay-button: 0.9s;
 
         @for $i from 1 through 7 {
           & .bg-darkblue:nth-child(#{$i}) {
