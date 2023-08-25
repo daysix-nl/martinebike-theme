@@ -8,7 +8,7 @@
                 <?php $i = 1 ?>
 
                 <?php while( have_rows('text_-_image') ): the_row();  ?>
-                    <img class="overflow-hidden w-full object-cover min-h-[550px] h-full <?php echo(($i === 1) ? " image-full" : "image-full-left") ?>  col-span-1" src="<?php the_sub_field('image'); ?>" alt="">
+                    <img class="overflow-hidden w-full object-cover object-center min-h-[550px] h-full <?php echo(($i === 1) ? " image-full" : "image-full-left") ?>  col-span-1" src="<?php the_sub_field('image'); ?>" alt="">
                     <?php $i++ ?>
                 <?php endwhile; ?>
             <?php endif; ?>
