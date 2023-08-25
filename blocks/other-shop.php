@@ -18,9 +18,9 @@
                     $visible = true;
                 ?>
                 
-                   <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?= $showcategorieOk ?></h1>
+                   <h1 class=" text-white leading-35 text-35 md:leading-70 md:text-65 font-medium animation-title "><?= $showcategorieOk ?></h1>
                 <?php } else { ?>
-                       <h1 class=" text-white leading-50 text-50 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
+                       <h1 class=" text-white leading-35 text-35 md:leading-70 md:text-65 font-medium animation-title "><?php the_title(); ?></h1>
                 <?php } ?>
             <?php endif; ?>
 
