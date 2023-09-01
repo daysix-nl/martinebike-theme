@@ -129,3 +129,27 @@ html :where(.wp-block) {
 .editor-styles-wrapper .md\:w-\[50vw\] {
   width: 50% !important;
 }
+
+.acf-block-preview {
+  #field_8_4 {
+    display: none;
+  }
+
+  #input_8_1_3 {
+    width: 100%;
+  }
+
+  #input_8_3 {
+    margin-top: 20px;
+  }
+
+  .gform-body {
+    legend {
+      display: none;
+    }
+
+    .gfield_label {
+      display: none;
+    }
+  }
+}
