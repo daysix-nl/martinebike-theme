@@ -429,6 +429,23 @@ add_action('acf/init', function () {
                     ]
                 ]
             ],
+                        [
+                'name'              => 'other-form-newsletter',
+                'title'             => __('Newsletter - Block'),
+                'description'       => __('A custom image block'),
+                'category'          => 'other',
+                'icon'              => 'laptop',
+                'keywords'          => ['layout', 'other'],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'preview_image_help' => '/wp-content/themes/gapstars/img/preview-acf/hero-home.jpg',
+                            'is_preview'    => true
+                        ]
+                    ]
+                ]
+            ],
             [
                 'name'              => 'other-tables',
                 'title'             => __('Tables'),
@@ -651,6 +668,23 @@ add_action('acf/init', function () {
                 ]
             ],
             [
+                'name'              => 'other-client-logo',
+                'title'             => __('Client Logo'),
+                'description'       => __('A custom post block'),
+                'category'          => 'other',
+                'icon'              => 'laptop',
+                'keywords'          => ['layout', 'other'],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'preview_image_help' => '/wp-content/themes/gapstars/img/preview-acf/hero-home.jpg',
+                            'is_preview'    => true
+                        ]
+                    ]
+                ]
+            ],
+            [
                 'name'              => 'card-blocks',
                 'title'             => __('Card - Blocks'),
                 'description'       => __('A custom image block'),
@@ -718,6 +752,7 @@ add_action('acf/init', function () {
                     ]
                 ]
             ],
+
         ];
 
         foreach ($blocks as $block) {
