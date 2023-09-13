@@ -1222,7 +1222,7 @@ function customize_dashboard_menu() {
     if ($current_user_login !== $allowed_user) {
         // Hier kun je de volledige URL/querystrings vinden van de menu-onderdelen die je wilt verbergen:
         $hidden_menu_items_by_url = array(
-            'edit.php',
+            // 'edit.php',
             'edit.php?post_type=acf-field-group',
             'edit-comments.php',
             'themes.php',
@@ -1239,7 +1239,7 @@ function customize_dashboard_menu() {
             'toplevel_page_wppusher', 
             'toplevel_page_ai1wm_export',
             'menu-top toplevel_page_mlang',
-            // 'toplevel_page_rank-math',
+            'toplevel_page_rank-math',
             // Voeg hier andere classes toe van de items die je wilt verbergen op basis van de class.
         );
 
@@ -1295,6 +1295,7 @@ function add_custom_admin_bar_styles() {
             #dashboard_site_health { display: none !important; }
             #rg_forms_dashboard { display: none !important; }
 	    #wp-admin-bar-updates { display: none !important; }
+     	    #toplevel_page_edit-post_type-filter-set { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 
