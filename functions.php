@@ -1296,6 +1296,7 @@ function add_custom_admin_bar_styles() {
             #rg_forms_dashboard { display: none !important; }
 	    #wp-admin-bar-updates { display: none !important; }
      	    #toplevel_page_edit-post_type-filter-set { display: none !important; }
+	  #rank_math_dashboard_widget { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
 
