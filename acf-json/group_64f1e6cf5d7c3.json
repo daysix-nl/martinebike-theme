@@ -1,6 +1,6 @@
 {
     "key": "group_64f1e6cf5d7c3",
-    "title": "Block: Client logos",
+    "title": "Client logos",
     "fields": [
         {
             "key": "field_64f1e6d06d784",
@@ -74,9 +74,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "options_page",
                 "operator": "==",
-                "value": "acf\/other-client-logo"
+                "value": "acf-options-client-logos"
             }
         ]
     ],
@@ -89,5 +89,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1693575415
+    "modified": 1694606619
 }

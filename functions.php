@@ -947,6 +947,12 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Categorie teksten',
 		'parent_slug'	=> 'options',
 	));
+
+    acf_add_options_sub_page(array(
+		'page_title' 	=> 'Client logos',
+		'menu_title'	=> 'Client logos',
+		'parent_slug'	=> 'options',
+	));
 }
 
 
