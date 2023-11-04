@@ -2,13 +2,13 @@
 <style>
 
     h3 {
-        color: #003054;
+        color: #FF6800;
         font-size: 40px;
         line-height: 50px;
         font-weight: 500;
     }
     h4 {
-        color: #003054;
+        color: #FF6800;
         font-size: 25px;
         line-height: 35px;
         font-weight: 500;
@@ -33,7 +33,7 @@ $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
         <?php the_field('wysiwyg'); ?>
         <?php if (get_field('button')): ?> 
         <div class="flex w-full <?php the_field('button_align');?>">
-        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-darkblue py-1 px-3 rounded-full text-white w-fit" href="<?php echo $link_url; ?>" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit" href="<?php echo $link_url; ?>" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
         </div>
         <?php endif; ?>
     </div>

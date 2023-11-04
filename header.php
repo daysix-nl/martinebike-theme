@@ -50,13 +50,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="drop-block lang grid grid-cols-2 gap-1">
                     <?php foreach ($langs_array as $lang) : ?>
                     <a href="<?php echo $lang['url']; ?>" class="drop-block__lin col-span-1">
-                        <img src="<?php echo $lang['flag']; ?>" alt="" class="object-center h-2 w-2 rounded-full">    
+                        <img src="<?php echo $lang['flag']; ?>" alt="" class="object-center h-2 w-2 rounded-[12px]">    
                     </a>
                     <?php endforeach; ?>
                 </div>
                 <?php endif; ?>
             </div>
-            <div class="col-span-1 flex justify-center">
+            <div class="col-span-1 flex justify-center my-[8px]">
                 <a href="<?php if(ICL_LANGUAGE_CODE=='en'): ?>/en/<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>/nl/<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>/pt/<?php endif; ?>">
                 <?php include get_template_directory() . '/img/logo.php'; ?>
                 </a>

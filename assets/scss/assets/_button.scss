@@ -1,21 +1,21 @@
-.page-field,
-.acf-block-body {
+// .page-field,
+// .acf-block-body {
 
-  a.bg-green,
-  a.bg-darkblue,
-  a.text-black,
-  a.bg-white,
-  a.button,
-  p a,
-  button {
-    transition: 0.3s;
+//   a.bg-green,
+//   a.bg-oranje,
+//   a.text-black,
+//   a.bg-white,
+//   a.button,
+//   p a,
+//   button {
+//     transition: 0.3s;
 
-    &:hover {
-      transition: 0.3s;
-      opacity: 0.6;
-    }
-  }
-}
+//     &:hover {
+//       transition: 0.3s;
+//       opacity: 0.6;
+//     }
+//   }
+// }
 
 
 .mobilefilter {
@@ -26,4 +26,8 @@
 .open {
   display: block;
   bottom: 0px;
+}
+
+.testride .button {
+  max-width: 234px !important;
 }

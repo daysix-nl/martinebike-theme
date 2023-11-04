@@ -27,14 +27,15 @@
         </div>
     <div class="absolute right-0 top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
 </section>
-<section class="container grid grid-cols-3 gap-3 my-[50px] md:my-5">
+<section class="container grid grid-cols-3 lg:grid-cols-4 gap-3 my-[50px] md:my-5">
 
-    <article class="col-span-3 md:col-span-1 h-full pr-4 hidden md:block">
-        <div class="md:p-2 md:bg-grey sticky top-9">
+    <article class="col-span-3 lg:col-span-1 h-full pr-4 hidden lg:block">
+        <div class="md:p-2 sticky md:bg-white top-9">
            <?php echo do_shortcode("[fe_widget]"); ?>
         </div>
     </article>
-    <article class="col-span-3 md:col-span-2">
+    <div class="col-span-3 lg:hidden w-full flex justify-end"><?php echo do_shortcode("[fe_open_button]"); ?></div>
+    <article class="col-span-3 md:col-span-3">
    <?php
                 if( have_rows('cpt_categorien', 'option') ): ?>
                     <?php while( have_rows('cpt_categorien', 'option') ): the_row(); ?>
@@ -72,19 +73,19 @@
                     <li class="col-span-3 md:col-span-1 flex flex-col p-1 pt-2 hover:scale-105 duration-300">
                         <a class="grid grid-cols-3 gap-2" href="<?php the_permalink(); ?>">
                         
-                                <div class="col-span-1 md:col-span-3 h-[150px] flex flex-col border-[#e6e6e6]">
-                                    <img class="max-w-[500px] h-auto w-full mx-auto my-auto mix-blend-darken"  src="<?php the_field('product_image', $post_id);?>" alt="" />
-                                </div>
+                            <div class="col-span-3 md:col-span-3 max-h-[180px] flex items-end justify-start overflow-hidden">
+                                <img class="mx-auto md:mx-[unset] w-auto h-full mix-blend-darken"  src="<?php the_field('product_image', $post_id);?>" alt="" />
+                            </div>
                        
-                            <div class="col-span-2 md:col-span-3 md:border-t-[1px] md:border-[#e6e6e6] ">
+                            <div class="col-span-3 md:col-span-3 mt-0">
                                 <div class="pt-2 flex flex-row justify-between">
-                                    <h2 class="text-16 leading-26 font-medium  text-darkblue"><?php the_title();?></h2>
+                                    <h2 class="text-20 leading-26 font-medium  text-black"><?php the_title();?></h2>
                                     
                                 </div>
-                                <div class="flex flex-row">
-                                    <p class=" text-16 leading-26 font-normal <?php echo((get_field("product_sale", $post_id) === "yes") ? "line-through pr-1 text-darkblue/20" : "text-green"); ?>">&#8364;<?php the_field('product_price', $post_id); ?></p> 
+                                <div class="flex items-end flex-row mt-[8px]">
+                                    <p class="text-20 leading-26 font-normal <?php echo((get_field("product_sale", $post_id) === "yes") ? "line-through pr-1 text-16 text-[#B1B1B1]" : "text-oranje"); ?>">&#8364;<?php the_field('product_price', $post_id); ?></p> 
                                     <?php if(get_field("product_sale", $post_id) === "yes"): ?>
-                                        <p class="text-green text-16 leading-26 font-normal">&#8364;<?php the_field('product_sale_price', $post_id); ?></p>
+                                        <p class="text-oranje text-20 leading-26 font-medium">&#8364;<?php the_field('product_sale_price', $post_id); ?></p>
                                     <?php endif; ?>
                                 </div>
                             </div>

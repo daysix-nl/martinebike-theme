@@ -116,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="h-4 w-full bg-blue/20">
+    <section class="h-4 w-full bg-lichtgrijs">
         <div class="container flex flex-col h-full justify-center">
             <p class="text-black text-14 leading-14"><?php the_field('slot', 'option'); ?></p>
         </div>
@@ -161,7 +161,7 @@
     width: 21.875rem; 
   }
   .cookie-popup--dark {
-    background: #8ebf31;
+    background: #F9BC02;
     color: #fff;
   }
   .cookie-popup--not-accepted {

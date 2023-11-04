@@ -2,8 +2,8 @@
     <div class="container grid grid-cols-1 md:grid-cols-3 gap-3 bg-white">
         <div class="col-span-1">
             <img src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-6450-scaled.jpg" alt="" class="w-full aspect-video object-cover max-h-[300px]">
-            <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-darkblue md:w-[90%] pt-3">CLASSIC</h3>
-            <h4 class="text-25 leading-25 md:text-28 md:leading-28 font-medium text-darkblue md:w-[90%] pt-1">89 euro</h4>
+            <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-oranje md:w-[90%] pt-3">CLASSIC</h3>
+            <h4 class="text-25 leading-25 md:text-28 md:leading-28 font-medium text-oranje md:w-[90%] pt-1">89 euro</h4>
             <p class="text-black text-16 leading-26 font-normal pt-3">INSPECTION OFF:</p>
              <ul class="flex flex-col gap-1 list-inside pt-3">
                 <li class="text-black text-16 leading-26 font-normal">GEAR system</li>
@@ -23,8 +23,8 @@
         </div>
         <div class="col-span-1">
             <img src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-6447-scaled.jpg" alt="" class="w-full aspect-video object-cover max-h-[300px]">
-            <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-darkblue md:w-[90%] pt-3">EXECUTIVE</h3>
-            <h4 class="text-25 leading-25 md:text-28 md:leading-28 font-medium text-darkblue md:w-[90%] pt-1">169 euro</h4>
+            <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-oranje md:w-[90%] pt-3">EXECUTIVE</h3>
+            <h4 class="text-25 leading-25 md:text-28 md:leading-28 font-medium text-oranje md:w-[90%] pt-1">169 euro</h4>
             <p class="text-black text-16 leading-26 font-normal pt-3">= CLASSIC +</p>
              <ul class="flex flex-col gap-1 list-inside pt-3">
                 <li class="text-black text-16 leading-26 font-normal">FREE PICK UP/DELIVERY</li>
@@ -36,8 +36,8 @@
         </div>
         <div class="col-span-1">
             <img src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-6483-scaled.jpg" alt="" class="w-full aspect-video object-cover max-h-[300px]">
-            <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-darkblue md:w-[90%] pt-3">PRO</h3>
-            <h4 class="text-25 leading-25 md:text-28 md:leading-28 font-medium text-darkblue md:w-[90%] pt-1">10%, max 500 euro</h4>
+            <h3 class="text-35 leading-35 md:text-50 md:leading-50 font-medium text-oranje md:w-[90%] pt-3">PRO</h3>
+            <h4 class="text-25 leading-25 md:text-28 md:leading-28 font-medium text-oranje md:w-[90%] pt-1">10%, max 500 euro</h4>
             <p class="text-black text-16 leading-26 font-normal pt-3">= EXECUTIVE +</p>
              <ul class="flex flex-col gap-1 list-inside pt-3">
                 <li class="text-black text-16 leading-26 font-normal">ALL LABOUR FREE OF CHARGE DURING SERVICE</li>

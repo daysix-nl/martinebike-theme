@@ -8,8 +8,8 @@
     </div>
     <div class="container grid grid-cols-2 z-2 relative">
         <div class="col-span-2 md:col-span-1 flex flex-col justify-center h-[70vh]">
-            <h3 class="text-25 leading-30 font-normal text-[#84bd00] mb-2"><?php the_field('subtitle'); ?></h3>
-            <h2 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-white md:text-darkblue md:w-[90%]"><?php the_field('title'); ?></h2>
+            <h3 class="text-25 leading-30 font-normal text-goud mb-2"><?php the_field('subtitle'); ?></h3>
+            <h2 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-white md:text-oranje md:w-[90%]"><?php the_field('title'); ?></h2>
         </div>
     </div>
 </section>

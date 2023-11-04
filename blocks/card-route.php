@@ -1,7 +1,7 @@
 <!-- CARD-ROUTE -->
 <section id="route" class="my-8 md:my-10 relative bg-white">
     <div class="container mb-3 md:mb-5">
-        <h2 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-darkblue md:w-[70%] mb-2"><?php the_field('title') ?></h2>    
+        <h2 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje md:w-[70%] mb-2"><?php the_field('title') ?></h2>    
         <p class="text-black text-16 leading-26 font-normal md:w-[80%]"><?php the_field('text') ?></p>
     </div>
 
@@ -10,7 +10,7 @@
         <?php while( have_rows('list') ): the_row(); ?>
             <div class="col-span-2 md:col-span-1 flex flex-col gap-1 md:gap-2">
                 <span class="counter-span text-35 leading-40 font-medium md:font-normal block text-yellow">.</span>
-                <h2 class="text-25 leading-35 md:text-30 md:leading-40 font-medium md:font-normal text-darkblue md:w-[80%]"><?php the_sub_field('title') ?></h2>
+                <h2 class="text-25 leading-35 md:text-30 md:leading-40 font-medium md:font-normal text-oranje md:w-[80%]"><?php the_sub_field('title') ?></h2>
                 <div class="mt-auto">
                     <?php the_sub_field('iframe') ?>
                 </div>
@@ -24,7 +24,7 @@
     <article class="relative h-fit w-full bg-gradient-grey">
         <div class="container flex flex-col justify-center bg-grey py-10 ">
             <div class="md:w-[70%] mx-auto flex flex-col gap-3">
-                <h2 class="text-40 leading-50 md:text-50 md:leading-70 font-normal text-darkblue  text-center md:text-start"><?php the_field('title_call'); ?></h2>
+                <h2 class="text-40 leading-50 md:text-50 md:leading-70 font-normal text-oranje  text-center md:text-start"><?php the_field('title_call'); ?></h2>
                 <p class="text-black text-16 leading-26 font-normal md:pr-6 md:w-[100%] text-center md:text-start"><?php the_field('text_call') ?></p>
                 <div class="flex flex-row gap-2 flex-wrap">
                     <?php 

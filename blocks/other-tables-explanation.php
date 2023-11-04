@@ -1,7 +1,7 @@
 <!-- OTHER-TABLES-EXPLANATION -->
 <section class="my-8 md:my-10 relative bg-white">
 <div class="container mb-3 md:mb-5">
-    <h2 class="text-40 leading-50 font-medium text-darkblue md:w-[90%]"><?php the_field('title');?></h2>
+    <h2 class="text-40 leading-50 font-medium text-oranje md:w-[90%]"><?php the_field('title');?></h2>
 </div>
     <div class="container grid grid-cols-3 gap-2">
         <?php if( have_rows('explanation') ): ?>

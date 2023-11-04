@@ -37,7 +37,7 @@
                 "bg-transparent": "Transparent",
                 "bg-grey": "Grey",
                 "bg-white": "White",
-                "bg-darkblue": "Blue"
+                "bg-oranje": "Blue"
             },
             "default_value": false,
             "return_format": "value",

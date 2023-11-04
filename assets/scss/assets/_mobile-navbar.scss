@@ -54,7 +54,7 @@
         $start-delay-button: 0.9s;
 
         @for $i from 1 through 7 {
-          & .bg-darkblue:nth-child(#{$i}) {
+          & .bg-oranje:nth-child(#{$i}) {
             animation: fade-in $fade-in-duration-button;
             animation-delay: ($fade-in-delay-button * ($i - 1)) + $start-delay-button;
             animation-fill-mode: forwards;

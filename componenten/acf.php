@@ -14,7 +14,7 @@
 <section class="mt-8 md:mt-10 md:pl-2 md:bg-transparent"></section>
 
 <section class="bg-grey md:my-[140px] my-[100px] "></section>
-<section class="bg-darkblue md:my-[140px] my-[100px] "></section>
+<section class="bg-oranje md:my-[140px] my-[100px] "></section>
 
 
 <section class="pt-10 md:pt-12"></section>

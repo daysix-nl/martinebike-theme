@@ -25,11 +25,11 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                                 ?>
-                                <a class="flex flex-row h-5  justify-center items-center bg-darkblue py-1 px-3 rounded-full text-white w-fit hover:bg-opacity-60 duration-300" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                <a class="flex flex-row h-5  justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit hover:bg-opacity-60 duration-300" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                             <?php endif; ?>
                     <?php endwhile; ?>
-                    <!-- <button class="flex flex-row h-5  justify-center items-center bg-darkblue py-1 px-3 rounded-full text-white w-fit button-contact-overlay hover:bg-opacity-60 duration-300">Book a test ride</button> -->
-                    <!-- <a class="flex flex-row h-5  justify-center items-center bg-darkblue py-1 px-3 rounded-full text-white w-fit button-contact-overlay" href="tel:+351 289 098 603"><?php include get_template_directory() . '/img/icons/phone.php'; ?><p class="text-black text-14 leading-14">+351 289 098 603</p></a> -->
+                    <!-- <button class="flex flex-row h-5  justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit button-contact-overlay hover:bg-opacity-60 duration-300">Book a test ride</button> -->
+                    <!-- <a class="flex flex-row h-5  justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit button-contact-overlay" href="tel:+351 289 098 603"><?php include get_template_directory() . '/img/icons/phone.php'; ?><p class="text-black text-14 leading-14">+351 289 098 603</p></a> -->
                 </div>
             </div>
     </div>

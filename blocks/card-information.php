@@ -1,7 +1,7 @@
 <section class="my-8 md:my-10 relative bg-white">
     <div class="container">
         <?php if(get_field('title')): ?>
-            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-darkblue md:w-[80%] mb-5"><?php the_field('title'); ?></h3>
+            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje md:w-[80%] mb-5"><?php the_field('title'); ?></h3>
         <?php endif; ?>
     </div>
     <div class="container grid grid-cols-2 gap-3 gap-y-5">
@@ -17,7 +17,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                         ?>
-                        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-darkblue py-1 px-3 rounded-full text-white w-fit mt-auto" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit mt-auto" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
             <?php endwhile; ?>

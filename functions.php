@@ -1295,7 +1295,7 @@ function add_custom_admin_bar_styles() {
             #dashboard_site_health { display: none !important; }
             #rg_forms_dashboard { display: none !important; }
 	    #wp-admin-bar-updates { display: none !important; }
-     	    #toplevel_page_edit-post_type-filter-set { display: none !important; }
+     	    // #toplevel_page_edit-post_type-filter-set { display: none !important; }
 	  #rank_math_dashboard_widget { display: none !important; }
             /* Voeg hier meer CSS-styling toe indien nodig */
         ";
@@ -1442,3 +1442,15 @@ add_filter( 'pll_rel_hreflang_attributes', function( $hreflangs ) {
 	$hreflangs['x-default'] = $hreflangs['en'];
 	return $hreflangs;
 } );
+
+
+
+
+/* Start code to add in the functions.php */
+add_filter( 'wpc_mobile_width', 'my_custom_wpc_mobile_width' );
+function my_custom_wpc_mobile_width( $width ) {
+    // Screen width in px when Filters widget should become mobile
+    $width = 1024; 
+    return $width;
+}
+/* End code to add in the functions.php  */

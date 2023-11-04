@@ -2,7 +2,7 @@
 <section class="my-8 md:my-10 relative bg-white">
     <div class="container grid gap-3 mb-3 md:mb-5">
         <?php if(get_field('title')): ?>
-            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium text-darkblue md:w-[70%]"><?php the_field('title'); ?></h3>
+            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium text-oranje md:w-[70%]"><?php the_field('title'); ?></h3>
         <?php endif; ?>
         <?php if(get_field('text')): ?>
             <p class="text-black text-16 leading-26 font-normal mt-3"><?php the_field('text'); ?></p>
@@ -19,7 +19,7 @@
                     <div class="col-span-3 md:col-span-2 p-2 py-4 overflow-hidden">
                         <div class="flex flex-row">                       
                             <span class="counter-span text-25 leading-35 font-medium md:font-normal block text-yellow">.&nbsp;</span>
-                            <h3 class="text-20 leading-30 md:text-25 md:leading-35 font-medium md:font-normal text-darkblue md:w-[80%] mb-1"><?php the_sub_field('title'); ?></h3>
+                            <h3 class="text-20 leading-30 md:text-25 md:leading-35 font-medium md:font-normal text-oranje md:w-[80%] mb-1"><?php the_sub_field('title'); ?></h3>
                         </div>
                         <p class="text-black text-16 leading-26 font-normal"><?php the_sub_field('text'); ?></p>
                     </div>

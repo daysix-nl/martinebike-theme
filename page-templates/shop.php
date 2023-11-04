@@ -14,7 +14,7 @@ get_header();
 
         <article class="col-span-1 h-full pr-4">
             <div class="p-2 bg-grey sticky top-0">
-                <h2 class="text-18 leading-28 font-medium text-darkblue mb-1">Brand</h2>
+                <h2 class="text-18 leading-28 font-medium text-oranje mb-1">Brand</h2>
                 <?php        
                     $args = [
                     'type'                     => 'post',
@@ -58,10 +58,10 @@ get_header();
                         <li class="col-span-1 bg-grey flex flex-col overflow-hidden rounded-lg">
                             <div class="py-4 px-2 flex flex-col gap-1">
                                 <img src="" alt="">
-                                <h2 class="text-25 leading-35  font-medium  text-darkblue md:w-[90%]"><?php the_title();?></h2>
-                                <p class="text-green text-18 leading-28 font-normal">fasd</p>
+                                <h2 class="text-25 leading-35  font-medium  text-oranje md:w-[90%]"><?php the_title();?></h2>
+                                <p class="text-goud text-18 leading-28 font-normal">fasd</p>
                             </div>
-                            <a class="bg-darkblue h-5 text-white mt-auto flex justify-center items-center" href="<?php the_permalink(); ?>">View Bike</a>
+                            <a class="bg-oranje h-5 text-white mt-auto flex justify-center items-center" href="<?php the_permalink(); ?>">View Bike</a>
                         </li>
                     <?php
                     endwhile;

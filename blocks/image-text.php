@@ -14,7 +14,7 @@
             <?php endif; ?>
         </div>
     </div>
-    <div class="container grid grid-cols-2 z-2 relative gap-4 md:gap-[120px] pt-2 md:py-5 md:min-h-[550px]">
+    <div class="container grid grid-cols-2 z-2 relative gap-4 md:gap-[180px] pt-2 md:py-5 md:min-h-[550px]">
         <?php if( have_rows('text_-_image') ): ?>
                 <?php while( have_rows('text_-_image') ): the_row();  ?>
 
@@ -24,7 +24,7 @@
 
                 <div class="col-span-2 md:col-span-1 md:flex flex-col justify-center h-full gap-2 md:pr-4">
                     <?php if (get_sub_field('title')): ?>   
-                    <h2 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-darkblue md:w-[90%]"><?php the_sub_field('title'); ?></h2>
+                    <h2 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-oranje md:w-[90%]"><?php the_sub_field('title'); ?></h2>
                     <?php endif; ?>
                     <div class="text-black text-16 leading-26 font-normal block-wysiwyg">
                         <?php the_sub_field('text'); ?>
@@ -36,7 +36,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                         ?>
-                        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-darkblue py-1 px-3 rounded-full text-white w-fit" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
                 <?php if(!get_field('left__right')): ?>

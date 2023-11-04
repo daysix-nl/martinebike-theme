@@ -22,17 +22,16 @@
             <img  src="<?php the_field('product_image');?>" alt="<?php the_title();?>" />
         </article>
         <article class="col-span-3 lg:col-span-1 p-2 ">
-            <h2 class="text-30 leading-40 lg:text-35 lg:leading-45 font-medium lg:font-medium text-darkblue mb-2"><?php the_title() ?></h2>
+            <h2 class="text-30 leading-40 lg:text-35 lg:leading-45 font-medium lg:font-medium text-black mb-2"><?php the_title() ?></h2>
             <div class="flex flex-row flex-wrap">
-                <p class=" text-25 leading-28 font-bold mb-2 <?php echo((get_field("product_sale") === "yes") ? "line-through pr-1 text-darkblue/20" : "text-green"); ?>">&#8364;<?php the_field('product_price'); ?></p> 
+                <p class=" text-25 leading-28 font-normal mb-2 <?php echo((get_field("product_sale") === "yes") ? "line-through pr-1 text-[#B1B1B1]" : "text-oranje"); ?>">&#8364;<?php the_field('product_price'); ?></p> 
                 <?php if(get_field("product_sale") === "yes"): ?>
-                    <p class="text-green text-25 leading-28 font-bold mb-2">&#8364;<?php the_field('product_sale_price'); ?></p>
+                    <p class="text-oranje text-25 leading-28 font-medium mb-2">&#8364;<?php the_field('product_sale_price'); ?></p>
                 <?php endif; ?> 
             </div>
            
             
             <div class="testride max-w-[400px]">
-                
                 <?php if(ICL_LANGUAGE_CODE=='en'): ?><?php echo do_shortcode( '[gravityform id="3" title="false" ajax=“true”]' ); ?> <?php elseif(ICL_LANGUAGE_CODE=='nl'): ?><?php echo do_shortcode( '[gravityform id="4" title="false" ajax=“true”]' ); ?> <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?><?php echo do_shortcode( '[gravityform id="5" title="false" ajax=“true”]' ); ?> <?php endif; ?>
             </div>
             <div class="mt-3">

@@ -30,7 +30,7 @@
                 </a>
             <?php endif; ?>
             <?php if(get_field('name_contact', 'option')): ?>
-                <a class="btn-transparant text-16 leading-16 font-hind font-light p-button rounded-full transition ease-in duration-300 hover:ease-out w-fit h-[45px] items-center  flex justify-center mt-2"
+                <a class="btn-transparant text-16 leading-16 font-hind font-light p-button rounded-[12px] transition ease-in duration-300 hover:ease-out w-fit h-[45px] items-center  flex justify-center mt-2"
                     href="<?php the_field('url_contact', 'option'); ?>">
                     <?php the_field('name_contact', 'option'); ?>
                 </a>
