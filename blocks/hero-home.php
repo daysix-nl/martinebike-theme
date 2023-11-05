@@ -5,7 +5,7 @@
         Your browser does not support HTML5 video.
     </video>
     <div class="container relative z-[2] h-full justify-center flex flex-col">
-        <h1 class="text-oranje leading-35 text-35 md:leading-70 md:text-65 font-medium pb-3"><?php the_field('title');?></h1>
+        <h1 class="text-white leading-35 text-35 md:leading-70 md:text-65 font-medium pb-3"><?php the_field('title');?></h1>
         <div class="flex-row flex-wrap gap-2 md:gap-2 gap-y-2  flex h-fit"> 
             <a class="flex flex-row h-5 w-[80%] md:w-fit justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white hover:bg-white hover:text-oranje duration-300" href="<?php the_field('button_link_1');?>"><?php the_field('button_tekst_1');?></a>
             <a class="flex flex-row h-5 w-[80%] md:w-fit  justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white hover:bg-white hover:text-oranje duration-300" href="<?php the_field('button_link_2');?>"><?php the_field('button_tekst_2');?></a>
