@@ -1,4 +1,4 @@
-<section>
+<!-- <section>
     <div class="container grid grid-cols-1 md:grid-cols-3 gap-3 bg-white">
         <div class="col-span-1">
             <img src="https://martinsebike.com/wp-content/uploads/2023/02/MARTINS-E-BIKE-6450-scaled.jpg" alt="" class="w-full aspect-video object-cover max-h-[300px]">
@@ -47,4 +47,65 @@
         </div>
 
     </div>
+</section> -->
+
+
+<section class="bg-[#EDE6D9] py-[80px]">
+    <div class="">
+        <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje text-center">martins e-bike <span class="text-black">service contracts 2024</span></h3>
+    </div>
+    <div class="container md:grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[20px] lg:gap-[60px] pt-[60px] pb-[80px]">
+        <div class="h-auto">
+            <div class="text-black text-26 leading-36 md:text-18 md:leading-28 lg:text-24 lg:leading-34 font-medium text-center">Classic: 89 euro</div>
+            <div class="w-full h-full bg-white rounded-[30px] mt-[30px] p-[30px]">
+                <div class="bg-oranje text-20 leading-35 md:text-16 md:leading-30 lg:text-20 lg:leading-35 px-[20px] rounded-[5px] text-white font-medium">Inspection off:</div>
+                <ul class="flex flex-col gap-1 list-inside pt-3 lg:px-[15px]">
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Gear system</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Brake system</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Electronic system</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Engine</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Wheels/Tyres</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Test drive & Bike fit</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Pedals</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Bottom Bracket</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Headset</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Wheelhub</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Lights</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">E-software update</li>
+                </ul>
+                <div class="pt-3 lg:px-[15px]">
+                    <p class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">+ Pickup/delivery cost</p>
+                </div>
+            </div>
+        </div>
+        <div class="h-auto mt-[50px] md:mt-[unset]">
+            <div class="text-black text-26 leading-36 md:text-18 md:leading-28 lg:text-24 lg:leading-34 font-medium text-center">Executive: 169 euro</div>
+            <div class="w-full h-full bg-white rounded-[30px] mt-[30px] p-[30px]">
+                <div class="bg-oranje text-20 leading-35 md:text-16 md:leading-30 lg:text-20 lg:leading-35 px-[20px] rounded-[5px] text-white font-medium">= Classic +</div>
+                <ul class="flex flex-col gap-1 list-inside pt-3 lg:px-[15px]">
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Free Pickup/delivery</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Free rental e-bike during service</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Two free guided tours</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">First to know about any special offers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-auto mt-[50px] md:mt-[unset]">
+            <div class="text-black text-26 leading-36 md:text-18 md:leading-28 lg:text-24 lg:leading-34 font-medium text-center">Pro: 10% max 500 euro</div>
+            <div class="w-full h-full bg-white rounded-[30px] mt-[30px] p-[30px]">
+                <div class="bg-oranje text-20 leading-35 md:text-16 md:leading-30 lg:text-20 lg:leading-35 px-[20px] rounded-[5px] text-white font-medium">Inspection off:</div>
+                <ul class="flex flex-col gap-1 list-inside pt-3 lg:px-[15px]">
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">All labour free of charge during service</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">All parts that need to be replaced free of charge*</li>
+                </ul>
+                <p class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal pt-3">*Exceptions:</p>
+                <ul class="flex flex-col gap-1 list-inside lg:px-[15px] pt-[15px]">
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Battery</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Intentional damage, third-party damage</li>
+                    <li class="text-black text-16 leading-26 md:text-14 md:leading-24 lg:text-16 lg:leading-26 font-normal">Maximum of 1000 euro per event and maximum of 5 years</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </section>
