@@ -3,10 +3,10 @@
     <div class="">
     <div class="container mb-3 md:mb-5">
         <?php if(get_field('title')): ?>
-            <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-oranje md:w-[50%] max-w-[400px]"><?php the_field('title'); ?></h3>
+            <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-normal text-oranje md:w-[50%] max-w-[400px]"><?php echo get_field('title'); ?></h3>
         <?php endif; ?>
         <?php if(get_field('text')): ?>
-            <p class="text-black text-16 leading-26 font-normal md:w-[60%] mt-3 max-w-[500px]"><?php the_field('text'); ?></p>
+            <p class="text-black text-16 leading-26 font-normal md:w-[60%] mt-3 max-w-[500px]"><?php echo get_field('text'); ?></p>
         <?php endif; ?>
     </div>
     <div class="container gap-3 flex flex-col lg:flex-row">
@@ -39,8 +39,8 @@
                             <div class="swiper-wrapper ">
                                 <?php while( have_rows('slider-client-repeater') ): the_row();  ?>
                                     <div class="swiper-slide flex justify-center flex-col min-h-[200px] lg:h-auto gap-2 md:w-[80%]">
-                                        <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-medium md:font-normal text-white md:w-[90%]"><?php the_sub_field('title'); ?></h3>
-                                        <p class="text-white text-16 leading-26 font-normal"><?php the_sub_field('text'); ?></p>
+                                        <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-medium md:font-normal text-white md:w-[90%]"><?php echo get_sub_field('title'); ?></h3>
+                                        <p class="text-white text-16 leading-26 font-normal"><?php echo get_sub_field('text'); ?></p>
                                     </div>
                                 <?php endwhile; ?>
                             </div>

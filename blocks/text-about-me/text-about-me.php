@@ -10,9 +10,9 @@
         <div class="col-span-2 md:col-span-1 py-4 md:py-6">
             <?php include get_template_directory() . '/img/icons/aanhalingsteken.php'; ?>
             <p class="text-16 leading-26 font-normal text-white">
-            <?php the_field('text'); ?></p>
-            <h3 class="text-28 leading-28 font-bold text-white pt-4 pb-2"><?php the_field('name'); ?></h3>
-            <h4 class="text-22 leading-32 font-medium text-roze"><?php the_field('function'); ?></h4>
+            <?php echo get_field('text'); ?></p>
+            <h3 class="text-28 leading-28 font-bold text-white pt-4 pb-2"><?php echo get_field('name'); ?></h3>
+            <h4 class="text-22 leading-32 font-medium text-roze"><?php echo get_field('function'); ?></h4>
         </div>
     </div>
 </section>

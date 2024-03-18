@@ -1,15 +1,15 @@
 <section class="my-8 md:my-10 relative bg-white">
     <div class="container">
         <?php if(get_field('title')): ?>
-            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje md:w-[80%] mb-5"><?php the_field('title'); ?></h3>
+            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje md:w-[80%] mb-5"><?php echo get_field('title'); ?></h3>
         <?php endif; ?>
     </div>
     <div class="container grid grid-cols-2 gap-3 gap-y-5">
         <?php if( have_rows('card_list') ): ?>
             <?php while( have_rows('card_list') ): the_row(); ?>
                 <div class="col-span-2 md:col-span-1 flex flex-col gap-2 md:pr-5">
-                    <img class="h-[125px] w-fit " src="<?php the_sub_field('image'); ?>" alt="">
-                    <p class="text-black text-16 leading-26 font-normal"><?php the_sub_field('text'); ?></p>
+                    <img class="h-[125px] w-fit " src="<?php echo get_sub_field('image'); ?>" alt="">
+                    <p class="text-black text-16 leading-26 font-normal"><?php echo get_sub_field('text'); ?></p>
                     <?php 
                     $link = get_sub_field('link');
                     if( $link ): 

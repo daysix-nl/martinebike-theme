@@ -8,7 +8,7 @@ if( $link ):
     <a
         id="button-<?php echo esc_html( str_replace(' ', '', $link_title) ); ?>" 
         href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"     
-        class="btn-<?php the_field('button_color');?> text-16 leading-16 md:text-16 md:leading-24  font-medium transition ease-in duration-300 hover:ease-out h-[50px] flex items-center w-fit"
+        class="btn-<?php echo get_field('button_color');?> text-16 leading-16 md:text-16 md:leading-24  font-medium transition ease-in duration-300 hover:ease-out h-[50px] flex items-center w-fit"
     >
         <?php echo esc_html( $link_title ); ?>
     </a>

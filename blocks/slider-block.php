@@ -13,12 +13,12 @@
                             <div class="grid grid-cols-2 gap-3">
                                 <div class="col-span-2 md:col-span-1 md:pr-6">
                                     <?php if(get_sub_field('name')): ?>
-                                        <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-medium md:font-normal text-oranje md:w-[90%]"><?php the_sub_field('name'); ?></h3>
+                                        <h3 class="text-25 leading-35 md:text-30 md:leading-40 font-medium md:font-normal text-oranje md:w-[90%]"><?php echo get_sub_field('name'); ?></h3>
                                     <?php endif; ?>
                                 </div>
                                 <div class="col-span-2 md:col-span-1">
                                     <?php if(get_sub_field('text')): ?>
-                                        <p class="text-black text-16 leading-26 font-normal"><?php the_sub_field('text'); ?></p>
+                                        <p class="text-black text-16 leading-26 font-normal"><?php echo get_sub_field('text'); ?></p>
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                     <div class="swiper-wrapper  md:h-[50px] flex flex-row">
                     <?php while( have_rows('slider-tabs-repeater') ): the_row(); ?>
                         <div class="swiper-slide bg-oranje clip-path-tabs h-[50px] last-of-type:border-r-0 border-r-2 border-white">
-                            <button class="text-white text-16 leading-28 h-5 pl-4"><?php the_sub_field('button_name'); ?></button>
+                            <button class="text-white text-16 leading-28 h-5 pl-4"><?php echo get_sub_field('button_name'); ?></button>
                         </div>
                     <?php endwhile; ?>
                 </div>

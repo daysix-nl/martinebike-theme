@@ -63,10 +63,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <?php endif; ?>
                 <div class="pt-[40px] md:pt-[35px] lg:pt-[30px] pb-[35px] lg:pb-[30px] w-[269.54px] md:w-[334.8px] mx-auto">
                     <?php if (get_field('popup_titel', 'option')): ?>   
-                    <h2 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 text-oranje font-medium pb-[15px] md:pb-[25px] xl:pb-2 mr-0 md:mr-[45px] xl:mr-[0px]"><?php the_field('popup_titel', 'option');?></h2>
+                    <h2 class="text-25 leading-30 md:text-21 md:leading-28 lg:text-22 lg:leading-25 xl:text-25 xl:leading-30 text-oranje font-medium pb-[15px] md:pb-[25px] xl:pb-2 mr-0 md:mr-[45px] xl:mr-[0px]"><?php echo get_field('popup_titel', 'option');?></h2>
                     <?php endif; ?>
                     <?php if (get_field('popup_tekst', 'option')): ?>   
-                    <p class="text-black text-16 leading-26 font-normal pb-[30px] md:pb-[28px] lg:pb-2 xl:pb-[35px] mr-0 md:mr-[45px] xl:mr-[0px]"><?php the_field('popup_tekst', 'option');?></p>
+                    <p class="text-black text-16 leading-26 font-normal pb-[30px] md:pb-[28px] lg:pb-2 xl:pb-[35px] mr-0 md:mr-[45px] xl:mr-[0px]"><?php echo get_field('popup_tekst', 'option');?></p>
                     <?php endif; ?>
                     <?php
                     $link = get_field('popup_link', 'option');

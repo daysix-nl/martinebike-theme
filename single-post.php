@@ -19,14 +19,14 @@
  <section class=" lg:my-10  relative">
     <div class=" lg:container grid grid-cols-2 gap-3 mb-12">
         <article class="col-span-3 lg:col-span-1 lg:sticky lg:top-8">
-            <img  src="<?php the_field('product_image');?>" alt="<?php the_title();?>" />
+            <img  src="<?php echo get_field('product_image');?>" alt="<?php the_title();?>" />
         </article>
         <article class="col-span-3 lg:col-span-1 p-2 ">
             <h2 class="text-30 leading-40 lg:text-35 lg:leading-45 font-medium lg:font-medium text-black mb-2"><?php the_title() ?></h2>
             <div class="flex flex-row flex-wrap">
-                <p class=" text-25 leading-28 font-normal mb-2 <?php echo((get_field("product_sale") === "yes") ? "line-through pr-1 text-[#B1B1B1]" : "text-oranje"); ?>">&#8364;<?php the_field('product_price'); ?></p> 
+                <p class=" text-25 leading-28 font-normal mb-2 <?php echo((get_field("product_sale") === "yes") ? "line-through pr-1 text-[#B1B1B1]" : "text-oranje"); ?>">&#8364;<?php echo get_field('product_price'); ?></p> 
                 <?php if(get_field("product_sale") === "yes"): ?>
-                    <p class="text-oranje text-25 leading-28 font-medium mb-2">&#8364;<?php the_field('product_sale_price'); ?></p>
+                    <p class="text-oranje text-25 leading-28 font-medium mb-2">&#8364;<?php echo get_field('product_sale_price'); ?></p>
                 <?php endif; ?> 
             </div>
            
@@ -42,7 +42,7 @@
                         <button class="accordion text-20 leading-30 md:text-26 md:leading-36 font-medium py-4 px-2 md:px-4 flex items-center">Description</button>
                     <div class="panel px-2 md:px-4">
                        <div class="flex py-4">
-                            <div class="text-black"><?php the_field('product_description') ?></div>
+                            <div class="text-black"><?php echo get_field('product_description') ?></div>
                           
                        </div>
                     </div>
@@ -61,8 +61,8 @@
                                 // Loop through rows.
                                 while( have_rows('specifications_repeater') ) : the_row(); ?>
 
-                                    <div class="col span-1 text-black font-bold"><?php the_sub_field('specifications_repeater_definition') ?></div>
-                                    <div class="col span-1 text-black"><?php the_sub_field('specifications_repeater_specification') ?></div>
+                                    <div class="col span-1 text-black font-bold"><?php echo get_sub_field('specifications_repeater_definition') ?></div>
+                                    <div class="col span-1 text-black"><?php echo get_sub_field('specifications_repeater_specification') ?></div>
 
                                 <?php
                                 // End loop.

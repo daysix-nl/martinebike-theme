@@ -3,26 +3,26 @@
     <div class="container grid grid-cols-2 gap-5">
 
         <div class="col-span-2 md:col-span-1">
-            <h2 class="text-30 leading-40 md:text-35 md:leading-45 font-medium md:font-medium text-oranje mb-2"><?php the_field("title") ?></h2>
-            <h3 class="text-20 leading-30 md:text-25 md:leading-35 font-medium md:font-normal text-oranje md:w-[90%]"><?php the_field("text") ?></h3>
+            <h2 class="text-30 leading-40 md:text-35 md:leading-45 font-medium md:font-medium text-oranje mb-2"><?php echo get_field("title") ?></h2>
+            <h3 class="text-20 leading-30 md:text-25 md:leading-35 font-medium md:font-normal text-oranje md:w-[90%]"><?php echo get_field("text") ?></h3>
         </div>
 
         <div class="col-span-2 md:col-span-1">
             <div class="grid grid-cols-2 gap-2">
                 <div class="ccol-span-2 md:ol-span-1">
-                    <h3 class="mb-1 text-14 leading-28 font-bold text-oranje"><?php the_field('title_contact', 'option'); ?></h3>
+                    <h3 class="mb-1 text-14 leading-28 font-bold text-oranje"><?php echo get_field('title_contact', 'option'); ?></h3>
                     <div class="flex flex-col gap-0.75">
-                        <p><?php the_field('adres', 'option'); ?></p>
-                        <a href="tel:+<?php the_field('Telefoonnummer', 'option'); ?>"><?php the_field('Telefoonnummer', 'option'); ?></a>
-                        <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
+                        <p><?php echo get_field('adres', 'option'); ?></p>
+                        <a href="tel:+<?php echo get_field('Telefoonnummer', 'option'); ?>"><?php echo get_field('Telefoonnummer', 'option'); ?></a>
+                        <a href="mailto:<?php echo get_field('email', 'option'); ?>"><?php echo get_field('email', 'option'); ?></a>
                         <a class="pt-2" href="tel:+351926890243">Emergency number for rental clients: +351 926 890 243</a>
                     </div>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                     <?php if( have_rows('items', 'option') ): ?>
-                        <h3 class="mb-1 text-14 leading-28 font-bold text-oranje"><?php the_field('title', 'option'); ?></h3>
+                        <h3 class="mb-1 text-14 leading-28 font-bold text-oranje"><?php echo get_field('title', 'option'); ?></h3>
                         <?php while( have_rows('items', 'option') ): the_row(); ?>
-                            <p><?php the_sub_field('text', 'option'); ?></p>
+                            <p><?php echo get_sub_field('text', 'option'); ?></p>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>

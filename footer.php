@@ -11,7 +11,7 @@
     <section>
         <div class="container grid grid-cols-4 gap-3">
             <div class="col-span-4 sm:col-span-2 md:col-span-1 flex flex-col ">
-                <h3 class="mb-1 text-14 leading-28 font-bold"><?php the_field('title_informatie', 'option'); ?></h3>
+                <h3 class="mb-1 text-14 leading-28 font-bold"><?php echo get_field('title_informatie', 'option'); ?></h3>
                 <?php if( have_rows('repeater_informatie', 'option') ): ?>
                     <div class="flex flex-col gap-1">
                     <?php while( have_rows('repeater_informatie', 'option') ): the_row(); ?>
@@ -32,7 +32,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-1 flex flex-col">
-                <h3 class="mb-1 text-14 leading-28 font-bold"><?php the_field('title_legale_termen', 'option'); ?></h3>
+                <h3 class="mb-1 text-14 leading-28 font-bold"><?php echo get_field('title_legale_termen', 'option'); ?></h3>
                 <?php if( have_rows('repeater_legale_termen', 'option') ): ?>
                     <div class="flex flex-col gap-1">
                     <?php while( have_rows('repeater_legale_termen', 'option') ): the_row(); ?>
@@ -53,14 +53,14 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-1 flex flex-col ">
-                <h3 class="mb-1 text-14 leading-28 font-bold"><?php the_field('title_contact', 'option'); ?></h3>
+                <h3 class="mb-1 text-14 leading-28 font-bold"><?php echo get_field('title_contact', 'option'); ?></h3>
                 <div class="flex flex-col gap-1">
-                    <p><?php the_field('adres', 'option'); ?></p>
-                    <a href="tel:+<?php the_field('Telefoonnummer', 'option'); ?>"><?php the_field('Telefoonnummer', 'option'); ?></a>
-                    <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
+                    <p><?php echo get_field('adres', 'option'); ?></p>
+                    <a href="tel:+<?php echo get_field('Telefoonnummer', 'option'); ?>"><?php echo get_field('Telefoonnummer', 'option'); ?></a>
+                    <a href="mailto:<?php echo get_field('email', 'option'); ?>"><?php echo get_field('email', 'option'); ?></a>
                 </div>
 
-                <h3 class="my-1 pt-1 text-14 leading-28 font-bold"><?php the_field('title_volg_ons', 'option'); ?></h3>
+                <h3 class="my-1 pt-1 text-14 leading-28 font-bold"><?php echo get_field('title_volg_ons', 'option'); ?></h3>
                 <div class="flex flex-row flex-wrap gap-1">
                     <?php 
                     $link = get_field('facebook', 'option');
@@ -111,14 +111,14 @@
             </div>
             
             <div class="col-span-4 sm:col-span-2 md:col-span-1">
-                <h3 class="mb-1 text-14 leading-28 font-bold"><?php the_field('title_maandelijkse_nieuwsbrief', 'option'); ?></h3>
+                <h3 class="mb-1 text-14 leading-28 font-bold"><?php echo get_field('title_maandelijkse_nieuwsbrief', 'option'); ?></h3>
                <?php    echo do_shortcode( '[gravityform id="1" title="false"]' ); ?>
             </div>
         </div>
     </section>
     <section class="h-4 w-full bg-lichtgrijs">
         <div class="container flex flex-col h-full justify-center">
-            <p class="text-black text-14 leading-14"><?php the_field('slot', 'option'); ?></p>
+            <p class="text-black text-14 leading-14"><?php echo get_field('slot', 'option'); ?></p>
         </div>
     </section>
 </footer>
@@ -207,11 +207,11 @@
   </style> -->
 
 
- <!-- <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php the_field('tonen', 'option'); ?>">
+ <!-- <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php echo get_field('tonen', 'option'); ?>">
 
     <div>
-    <strong><?php the_field('popup_titel', 'option'); ?></strong><br>
-    <p><?php the_field('popup_tekst', 'option'); ?></p>
+    <strong><?php echo get_field('popup_titel', 'option'); ?></strong><br>
+    <p><?php echo get_field('popup_tekst', 'option'); ?></p>
     </div>
  
     <div class="cookie-popup-actions">

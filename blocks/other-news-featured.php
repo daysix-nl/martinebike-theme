@@ -1,8 +1,8 @@
 <!-- OTHER-NEWS -->
 <section class="my-8 md:my-10 bg-white">
     <div class="container mb-4 max-w-[800px]">
-        <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-oranje text-center mx-auto"><?php the_field('title'); ?></h3>
-        <p class="text-black text-16 leading-26 font-normal text-center md:px-3"><?php the_field('text'); ?></p>
+        <h3 class="mb-1 text-35 leading-42 md:text-50 md:leading-60 font-medium text-oranje text-center mx-auto"><?php echo get_field('title'); ?></h3>
+        <p class="text-black text-16 leading-26 font-normal text-center md:px-3"><?php echo get_field('text'); ?></p>
             <div class="flex flex-row flex-wrap gap-1 socials w-fit mx-auto mt-1">
                         <a class="button" href="https://www.facebook.com/MartinsEBike" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="facebook"><path fill="#1976D2" d="M14 0H2C.897 0 0 .897 0 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z"></path><path fill="#FAFAFA" fill-rule="evenodd" d="M13.5 8H11V6c0-.552.448-.5 1-.5h1V3h-2a3 3 0 0 0-3 3v2H6v2.5h2V16h3v-5.5h1.5l1-2.5z" clip-rule="evenodd"></path></svg>
@@ -35,6 +35,6 @@
            <?php endwhile; wp_reset_query(); ?>
     </div>
     <div class="container flex mt-4">
-        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit mx-auto" href="<?php the_field('button'); ?>"><?php the_field('button_name'); ?></a>
+        <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit mx-auto" href="<?php echo get_field('button'); ?>"><?php echo get_field('button_name'); ?></a>
     </div>
 </section>

@@ -2,7 +2,7 @@
     <div class="container flex justify-center flex-col h-full">
         <div class="w-full sm:w-2/3 xl:w-1/2">
             <h1 class="text-75 leading-75 text-white font-bold"><?php the_title() ?></h1>
-            <p class="text-22 leading-32 text-white font-normal pr-5 my-6"><?php the_field('subtitle'); ?></p>
+            <p class="text-22 leading-32 text-white font-normal pr-5 my-6"><?php echo get_field('subtitle'); ?></p>
             <a href="/">Start de wedstrijdbespreking</a>
         </div>
     </div>

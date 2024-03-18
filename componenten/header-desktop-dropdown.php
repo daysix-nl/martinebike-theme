@@ -7,8 +7,8 @@
             <?php if( have_rows('diensten_repeater', 'option') ): ?>
                 <div class="content col-span-1">
                 <?php while( have_rows('diensten_repeater', 'option') ): the_row(); ?>
-                    <a href="<?php the_sub_field('url', 'option'); ?>">
-                        <p class="text-16 leading-32 text-wit font-normal"><?php the_sub_field('name', 'option'); ?></p>
+                    <a href="<?php echo get_sub_field('url', 'option'); ?>">
+                        <p class="text-16 leading-32 text-wit font-normal"><?php echo get_sub_field('name', 'option'); ?></p>
                     </a>
                 <?php endwhile; ?>
                 </div>
@@ -17,8 +17,8 @@
             <?php if( have_rows('diensten_repeater_2', 'option') ): ?>
                 <div class="content col-span-1">
                 <?php while( have_rows('diensten_repeater_2', 'option') ): the_row(); ?>
-                    <a href="<?php the_sub_field('url', 'option'); ?>">
-                        <p class="text-16 leading-32 text-wit font-normal"><?php the_sub_field('name', 'option'); ?></p>
+                    <a href="<?php echo get_sub_field('url', 'option'); ?>">
+                        <p class="text-16 leading-32 text-wit font-normal"><?php echo get_sub_field('name', 'option'); ?></p>
                     </a>
                 <?php endwhile; ?>
                 </div>
@@ -27,8 +27,8 @@
             <?php if( have_rows('diensten_repeater_3', 'option') ): ?>
                 <div class="content col-span-1">
                 <?php while( have_rows('diensten_repeater_3', 'option') ): the_row(); ?>
-                    <a href="<?php the_sub_field('url', 'option'); ?>">
-                        <p class="text-16 leading-32 text-wit font-normal"><?php the_sub_field('name', 'option'); ?></p>
+                    <a href="<?php echo get_sub_field('url', 'option'); ?>">
+                        <p class="text-16 leading-32 text-wit font-normal"><?php echo get_sub_field('name', 'option'); ?></p>
                     </a>
                 <?php endwhile; ?>
                 </div>

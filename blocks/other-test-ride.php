@@ -44,7 +44,7 @@
                                     $showcategorie = get_sub_field('slug', 'option');
                                         if (strpos($currentUrl, $showcategorie) !== false) { ?>
                     
-                                            <div class="block-wysiwyg pt-2 max-w-[800px] pb-2"><?php the_sub_field('eerste_alinea', 'option');?></div>
+                                            <div class="block-wysiwyg pt-2 max-w-[800px] pb-2"><?php echo get_sub_field('eerste_alinea', 'option');?></div>
                                      
                                             <?php
                                         } else {
@@ -75,10 +75,10 @@
                         
                    
                              <!-- <div class="col-span-3 md:col-span-3 max-h-[180px] flex items-end justify-start overflow-hidden">
-                                <img class="mx-auto md:mx-[unset] w-auto h-full mix-blend-darken"  src="<?php the_field('product_image', $post_id);?>" alt="" />
+                                <img class="mx-auto md:mx-[unset] w-auto h-full mix-blend-darken"  src="<?php echo get_field('product_image', $post_id);?>" alt="" />
                             </div> -->
                             <div class="col-span-3 md:col-span-3">
-                                <img class="mix-blend-multiply packshot"  src="<?php the_field('product_image', $post_id);?>" alt="" />
+                                <img class="mix-blend-multiply packshot"  src="<?php echo get_field('product_image', $post_id);?>" alt="" />
                             </div>
                        
                             <div class="col-span-3 md:col-span-3 mt-0">
@@ -87,9 +87,9 @@
                                     
                                 </div>
                                 <div class="flex items-end flex-row mt-[8px]">
-                                    <p class="text-20 leading-26 font-normal <?php echo((get_field("product_sale", $post_id) === "yes") ? "line-through pr-1 text-16 text-[#B1B1B1]" : "text-oranje"); ?>">&#8364;<?php the_field('product_price', $post_id); ?></p> 
+                                    <p class="text-20 leading-26 font-normal <?php echo((get_field("product_sale", $post_id) === "yes") ? "line-through pr-1 text-16 text-[#B1B1B1]" : "text-oranje"); ?>">&#8364;<?php echo get_field('product_price', $post_id); ?></p> 
                                     <?php if(get_field("product_sale", $post_id) === "yes"): ?>
-                                        <p class="text-oranje text-20 leading-26 font-medium">&#8364;<?php the_field('product_sale_price', $post_id); ?></p>
+                                        <p class="text-oranje text-20 leading-26 font-medium">&#8364;<?php echo get_field('product_sale_price', $post_id); ?></p>
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                                 if (strpos($currentUrl, $showcategorie) !== false) { ?>
                                                  <section class="relative bg-white">
                                                  <div class="container block-wysiwyg">
-                                                        <?php the_sub_field('overige_teksten', 'option');?>
+                                                        <?php echo get_sub_field('overige_teksten', 'option');?>
                                                  </div>
                                                 </section>
                                                     <?php

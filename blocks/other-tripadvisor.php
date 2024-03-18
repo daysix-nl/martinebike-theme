@@ -2,7 +2,7 @@
 <section class="my-8 md:my-10 bg-white">
     <article class="mb-5">
         <div class="container">
-            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje md:w-[50%]"><?php the_field('title'); ?></h3>
+            <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje md:w-[50%]"><?php echo get_field('title'); ?></h3>
         </div>
     </article>
     <article class="container">

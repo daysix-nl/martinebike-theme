@@ -30,9 +30,9 @@ $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
 
 <section class="my-8 md:my-10 relative bg-white">
     <div class="container flex flex-col gap-3  block-wysiwyg">
-        <?php the_field('wysiwyg'); ?>
+        <?php echo get_field('wysiwyg'); ?>
         <?php if (get_field('button')): ?> 
-        <div class="flex w-full <?php the_field('button_align');?>">
+        <div class="flex w-full <?php echo get_field('button_align');?>">
         <a class="flex flex-row gap-1 min-w-[200px] justify-center items-center bg-oranje py-1 px-3 rounded-[12px] text-white w-fit" href="<?php echo $link_url; ?>" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
         </div>
         <?php endif; ?>
