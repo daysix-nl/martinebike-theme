@@ -52,7 +52,7 @@
 
 <section class="bg-[#EDE6D9] py-[80px]">
     <div class="container">
-        <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje text-center max-w-[800px] mx-auto">martins e-bike <span class="text-black">service contracts 2024</span></h3>
+        <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje text-center max-w-[800px] mx-auto">martins e-bike <span class="text-black">service contracts</span></h3>
     </div>
     <div class="container md:grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[20px] lg:gap-[60px] pt-[60px] pb-[80px]">
         <div class="h-auto">
