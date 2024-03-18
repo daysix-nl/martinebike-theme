@@ -32,14 +32,14 @@
            
             
             <div class="testride max-w-[400px]">
-                <?php if(ICL_LANGUAGE_CODE=='en'): ?><?php echo do_shortcode( '[gravityform id="3" title="false" ajax=“true”]' ); ?> <?php elseif(ICL_LANGUAGE_CODE=='nl'): ?><?php echo do_shortcode( '[gravityform id="4" title="false" ajax=“true”]' ); ?> <?php elseif(ICL_LANGUAGE_CODE=='pt'): ?><?php echo do_shortcode( '[gravityform id="5" title="false" ajax=“true”]' ); ?> <?php endif; ?>
+               <?php echo do_shortcode( '[gravityform id="3" title="false" ajax=“true”]' ); ?>
             </div>
             <div class="mt-3">
                 
             
                 <div class="">
                     <div class="accordion-item"> 
-                        <button class="accordion text-20 leading-30 md:text-26 md:leading-36 font-medium py-4 px-2 md:px-4 flex items-center"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Description<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Omschrijving<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Descrição<?php endif; ?></button>
+                        <button class="accordion text-20 leading-30 md:text-26 md:leading-36 font-medium py-4 px-2 md:px-4 flex items-center">Description</button>
                     <div class="panel px-2 md:px-4">
                        <div class="flex py-4">
                             <div class="text-black"><?php the_field('product_description') ?></div>
@@ -49,8 +49,7 @@
                     </div>
 
                     <div class="accordion-item"> 
-                        <button class="accordion text-20 leading-30 md:text-26 md:leading-36 font-medium py-4 px-2 md:px-4 flex items-center"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Specifications<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Specificaties<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>
-Especificações<?php endif; ?></button>
+                        <button class="accordion text-20 leading-30 md:text-26 md:leading-36 font-medium py-4 px-2 md:px-4 flex items-center">Specifications</button>
                                        
                         <div class="panel px-2 md:px-4">
                        <div class="grid grid-cols-2 py-4 gap-2">

@@ -112,7 +112,7 @@
             
             <div class="col-span-4 sm:col-span-2 md:col-span-1">
                 <h3 class="mb-1 text-14 leading-28 font-bold"><?php the_field('title_maandelijkse_nieuwsbrief', 'option'); ?></h3>
-                <?php if(ICL_LANGUAGE_CODE=='en'): ?><?php    echo do_shortcode( '[gravityform id="1" title="false"]' ); ?><?php elseif(ICL_LANGUAGE_CODE=='nl'): ?><?php    echo do_shortcode( '[gravityform id="8" title="false"]' ); ?><?php elseif(ICL_LANGUAGE_CODE=='pt'): ?><?php    echo do_shortcode( '[gravityform id="9" title="false"]' ); ?><?php endif; ?>
+               <?php    echo do_shortcode( '[gravityform id="1" title="false"]' ); ?>
             </div>
         </div>
     </section>
@@ -126,7 +126,7 @@
     <p class="text-white text-20 py-1 text-center z-[999]">-- THIS WEBSITE IS UNDER CONSTRUCTION -- </p>
  </section> -->
 
-<style>/* COOKIE POPUP STYLES */
+<!-- <style>/* COOKIE POPUP STYLES */
 
 
 
@@ -204,10 +204,10 @@
     from { bottom: -6.25rem; }
     to { bottom: 1.25rem; }
   }
-  </style>
+  </style> -->
 
 
- <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php the_field('tonen', 'option'); ?>">
+ <!-- <div class="cookie-popup cookie-popup--short cookie-popup--dark <?php the_field('tonen', 'option'); ?>">
 
     <div>
     <strong><?php the_field('popup_titel', 'option'); ?></strong><br>
@@ -218,10 +218,10 @@
       <button>X</button>
     </div>
   </div>
+ -->
 
 
-
-
+<!-- 
  <script>
   
   /* common fuctions */
@@ -255,7 +255,7 @@
   function _switchMode(cssClass) {
     el('.cookie-popup').classList.toggle(cssClass);
   }
-  </script>
+  </script> -->
 
 
 <?php wp_footer(); ?>

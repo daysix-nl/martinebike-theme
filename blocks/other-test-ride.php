@@ -73,8 +73,12 @@
                     <li class="col-span-3 md:col-span-1 flex flex-col p-1 pt-2 hover:scale-105 duration-300">
                         <a class="grid grid-cols-3 gap-2" href="<?php the_permalink(); ?>">
                         
-                            <div class="col-span-3 md:col-span-3 max-h-[180px] flex items-end justify-start overflow-hidden">
+                   
+                             <!-- <div class="col-span-3 md:col-span-3 max-h-[180px] flex items-end justify-start overflow-hidden">
                                 <img class="mx-auto md:mx-[unset] w-auto h-full mix-blend-darken"  src="<?php the_field('product_image', $post_id);?>" alt="" />
+                            </div> -->
+                            <div class="col-span-3 md:col-span-3">
+                                <img class="mix-blend-multiply packshot"  src="<?php the_field('product_image', $post_id);?>" alt="" />
                             </div>
                        
                             <div class="col-span-3 md:col-span-3 mt-0">

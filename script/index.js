@@ -24,7 +24,7 @@ try {
     overlayMenu.classList.add("hidden");
     buttonHamburger.classList.toggle("active");
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiper = new Swiper(".mySwiper", {
@@ -74,7 +74,7 @@ try {
   document.querySelector(".mySwiper").addEventListener("mouseenter", () => {
     swiper2.autoplay.stop();
   });
-} catch (error) {}
+} catch (error) { }
 
 /*********************/
 /*** side-Navbar ***/
@@ -108,7 +108,7 @@ try {
       observer.observe(section);
     });
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiper = new Swiper(".mySwiperAnimation", {
@@ -124,7 +124,7 @@ try {
       type: "progressbar",
     },
   });
-} catch (error) {}
+} catch (error) { }
 
 try {
   const observer = new IntersectionObserver((entries) => {
@@ -137,7 +137,7 @@ try {
 
   const hiddenElements = document.querySelectorAll(".card-navigation");
   hiddenElements.forEach((el) => observer.observe(el));
-} catch (error) {}
+} catch (error) { }
 
 /**********************/
 /**** accordion ***/
@@ -163,7 +163,7 @@ try {
       }
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   var swiper = new Swiper(".shop-swiper", {
@@ -176,7 +176,7 @@ try {
       clickable: true,
     },
   });
-} catch (error) {}
+} catch (error) { }
 
 /*********************/
 /*** contact overlay ***/
@@ -202,7 +202,7 @@ try {
       ContactBackground.classList.remove("open");
     });
   }
-} catch (error) {}
+} catch (error) { }
 
 try {
   const buttonHamburger = document.querySelector(".button-hamburger");
@@ -217,4 +217,22 @@ try {
       buttonHamburger.classList.remove("active-color");
     }
   });
-} catch (error) {}
+} catch (error) { }
+
+
+
+try {
+  const buttonClosePopUp = document.querySelector(".closePopUp");
+  const popUp = document.querySelector(".pop_up");
+
+  const closePopupAndSetCookie = () => {
+    let date = new Date();
+    date.setDate(date.getDate() + 7);
+    document.cookie =
+      "popup=yes; expires=" + date.toUTCString() + ";" + "path=/";
+    popUp.classList.add("hidden");
+  };
+
+  buttonClosePopUp.addEventListener("click", closePopupAndSetCookie);
+  popUp.addEventListener("click", closePopupAndSetCookie);
+} catch (error) { }

@@ -1056,11 +1056,11 @@ function register_news_post_type_labels() {
 }
 add_action('init', 'register_news_post_type_labels');
 
-function custom_post_type_polylang_support() {
-    pll_register_string('Post Type Label', 'news', 'Custom Post Type Label');
-    pll_register_string('Post Type Singular Label', 'news', 'Custom Post Type Singular Label');
-}
-add_action('init', 'custom_post_type_polylang_support');
+// function custom_post_type_polylang_support() {
+//     pll_register_string('Post Type Label', 'news', 'Custom Post Type Label');
+//     pll_register_string('Post Type Singular Label', 'news', 'Custom Post Type Singular Label');
+// }
+// add_action('init', 'custom_post_type_polylang_support');
 
 
 /*
