@@ -20,8 +20,8 @@
                 
                    <h1 class=" text-white leading-35 text-35 md:leading-70 md:text-65 font-medium animation-title "><?= $showcategorieOk ?></h1>
                 <?php } else { ?>
-                        <h1 class="text-white leading-35 text-35 md:leading-70 md:text-65 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Passeio de teste<?php endif; ?></h1>
-                        <p class="text-white leading-20 text-20 md:leading-28 md:text-28 font-medium animation-title"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Choose a bike and book a test ride<?php elseif(ICL_LANGUAGE_CODE=='nl'): ?>Kies een fiets en boek een proefrit<?php elseif(ICL_LANGUAGE_CODE=='pt'): ?>Escolha uma bicicleta e marque um test ride<?php endif; ?></p>
+                        <h1 class="text-white leading-35 text-35 md:leading-70 md:text-65 font-medium animation-title">Test ride</h1>
+                        <p class="text-white leading-20 text-20 md:leading-28 md:text-28 font-medium animation-title">Choose a bike and book a test ride</p>
                 <?php } ?>
             <?php endif; ?>
         </div>
