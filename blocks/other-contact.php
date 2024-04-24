@@ -15,7 +15,7 @@
                         <p><?php echo get_field('adres', 'option'); ?></p>
                         <a href="tel:+<?php echo get_field('Telefoonnummer', 'option'); ?>"><?php echo get_field('Telefoonnummer', 'option'); ?></a>
                         <a href="mailto:<?php echo get_field('email', 'option'); ?>"><?php echo get_field('email', 'option'); ?></a>
-                        <a class="pt-2" href="tel:+351926890243">Emergency number for rental clients: +351 926 890 243</a>
+                        <a class="pt-2" href="tel:+351927567498‬">Emergency number for rental clients: +351 927 567 498‬</a>
                     </div>
                 </div>
                 <div class="col-span-2 md:col-span-1">
