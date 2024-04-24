@@ -17,7 +17,7 @@
         <div class="absolute right-0 top-0 w-full h-full bg-black opacity-[0.1] z-[0]"></div>
     </section>
      <div class="container mx-auto  pr-10">
-        <h1 class="text-oranje leading-50 text-50 md:leading-70 md:text-65 font-medium mb-3 md:hidden"><?php the_title(); ?></h1>
+        <p class="text-oranje leading-50 text-50 md:leading-70 md:text-65 font-medium mb-3 md:hidden"><?php the_title(); ?></p>
         <p class="text-14 mb-1 text-goud"><?php echo get_the_date(); ?></p>
         <div class="block-wysiwyg">
             <?php the_content(); ?>
