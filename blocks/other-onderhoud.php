@@ -52,8 +52,8 @@
 
 <section class="bg-[#EDE6D9] py-[80px]">
     <div class="container">
-        <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje text-center max-w-[800px] mx-auto">martins e-bike <span class="text-black">service contracts 2025</span></h3>
-        <p class="block-wysiwyg text-center">All maintenance contracts are for a 12 months period. During this period clients can choose their date of service.</p>
+        <h3 class="text-35 leading-42 md:text-50 md:leading-60 font-medium md:font-normal text-oranje text-center max-w-[800px] mx-auto">martins e-bike <br><span class="text-black">service contracts 2025</span></h3>
+        <p class="block-wysiwyg text-center mt-[30px]">All maintenance contracts are for a 12 months period. During this period clients can choose their date of service.</p>
     </div>
     <div class="container md:grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[20px] lg:gap-[60px] pt-[60px] pb-[80px]">
         <div class="h-auto">
